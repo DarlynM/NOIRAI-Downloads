@@ -18,3 +18,6 @@ Chat deletion removes its saved conversation records. Applied project edits rema
 
 Support, funding and website
 If you email support, you choose what to share. Use synthetic reproduction steps and omit secrets or private work. Contributions are processed by GoFundMe under its own privacy policy. The launch website uses no analytics or marketing trackers added by NoirGen LLC; its hosting provider may use essential authentication, security cookies and access logs. Website activity is separate from the desktop app.
+
+Installer downloads
+The small installer retrieves pinned Electron, Node.js, Python, llama.cpp and CUDA runtime archives from GitHub, nodejs.org and python.org. Each archive and installed file is verified by SHA-256. Those providers receive normal download request metadata, including the network address. No project or conversation content is sent. An Internet connection is required for first installation; model inference then runs locally.

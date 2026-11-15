@@ -8,7 +8,7 @@ This repository contains release documentation and official Windows installer do
 
 Chat with compatible local models, keep conversations, review code edits, and run protected tools. Import a text GGUF, choose a pinned catalog download, or connect a supported loopback model server. Model files download separately; compatibility varies.
 
-The desktop shortcut is **NOIRAI**. The app's interface is **NOIR**.
+The desktop shortcut is **NOIRAI**. The app's interface is **NOIR**. The approximately 20 MB installer requires Internet access to download approximately 921 MB of verified runtimes, plus optional Git tools and your chosen models. After setup, managed GGUF inference runs locally.
 
 Read the release notes, requirements, license and privacy notice before installing. Initial releases are unsigned. Verify the published SHA-256 and use only this official release location.
 

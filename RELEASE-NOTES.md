@@ -4,7 +4,7 @@ NOIR is a free local AI desktop app by NoirGen LLC. The desktop shortcut is name
 
 This release adds a model library with pinned, SHA-256 checked downloads; compatible text GGUF imports; and loopback connections to OpenAI-compatible local servers such as Ollama and LM Studio. Imported models start in chat mode. A synthetic format check enables coding tools; it is not a guarantee of a model's coding quality.
 
-Download `NOIRAI-1.3.0-Setup.exe`, compare its SHA-256 with `SHA256SUMS.txt`, read the license, and install. The installer creates the desktop shortcut and includes the local inference engine, Node and Python. Optional Git tools download directly from Git for Windows. Models download separately. Start with a small model and check your available memory and disk space. External servers must be started separately; managed GGUF inference starts with NOIR.
+Download the approximately 20 MB `NOIRAI-1.3.0-Setup.exe`, compare its SHA-256 with `SHA256SUMS.txt`, read the license, and install. An Internet connection is required for setup: the installer automatically downloads approximately 921 MB of pinned Electron, Node, Python, llama.cpp and CUDA runtimes from their official distribution locations, verifies SHA-256 checksums, and creates the desktop shortcut. Optional Git tools add a 38 MB download directly from Git for Windows. Models download separately. Start with a small model and check your available memory and disk space. External servers must be started separately; managed GGUF inference starts with NOIR.
 
 The initial installer is unsigned. Code signing is part of the funding plan. Never bypass an antivirus detection; report it with the release filename and checksum.
 
