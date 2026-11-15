@@ -1,0 +1,22 @@
+NOIR freeware license
+
+Copyright 2026 NoirGen LLC. All rights reserved in the proprietary NOIR application, except as separately licensed below.
+
+Permission
+NoirGen LLC grants you a non-exclusive, royalty-free license to install and use unmodified NOIR releases for personal or commercial purposes. You may share an unmodified official installer with its notices intact, without charging for the application or implying endorsement by NoirGen LLC. No payment or contribution is required to use the app.
+
+Ownership
+This license does not publish the application source code or grant ownership of NOIR, its name, trademarks, or proprietary source. It does not restrict any rights you have under applicable law. You retain ownership of your inputs and files; third-party model terms may affect the use of model outputs.
+
+Third-party components and models
+Third-party software and models are covered by their own licenses, which take precedence for those components. See the included third-party notices and source-availability information. Models are downloaded separately or supplied by the user and must be used under their publisher's terms.
+
+NVIDIA CUDA runtime components remain NVIDIA property and are provided only as part of this application, subject to the included NVIDIA CUDA license. Do not redistribute them as a standalone product, remove their notices, or reverse engineer or modify them except where their license or applicable law permits. The full component terms are included as licenses/NVIDIA-CUDA-EULA.pdf and at https://docs.nvidia.com/cuda/archive/12.4.1/eula/index.html. NOIR is not sponsored or endorsed by NVIDIA.
+
+No warranty
+To the extent permitted by applicable law, NOIR is provided as is, without warranty of merchantability, fitness for a particular purpose, or non-infringement. Model outputs can be incorrect. Review edits and commands before approving them. NoirGen LLC is not liable for indirect or consequential loss to the extent permitted by applicable law; this does not exclude rights or liability that cannot lawfully be excluded.
+
+Optional support
+Contributions support development and are voluntary. They do not grant equity, ownership, source access, or a guaranteed feature or delivery date.
+
+Contact: support@noirgen.com

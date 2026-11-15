@@ -1,0 +1,20 @@
+NOIR privacy notice
+
+Publisher: NoirGen LLC. Contact: support@noirgen.com. Effective for version 1.3.0.
+
+The desktop application has no app-account requirement, telemetry, advertising SDK, or built-in remote cloud-model endpoint. Conversations, settings, and approved project metadata are stored locally in the selected installation folder. Windows may separately create paging, diagnostic, security and crash records.
+
+Model inference
+NOIR sends the current conversation and selected project context to its local inference service or a loopback server you explicitly connect. External local servers can have their own cloud or network features. Their behavior is controlled outside NOIR. Review the server's settings before sending sensitive information.
+
+Model downloads
+When you choose Download, NOIR contacts Hugging Face and its file-delivery hosts to obtain the selected model. Those hosts receive normal network request data, such as your IP address and the model requested. Model downloads do not include chats or project contents. Downloaded models are checked against a pinned SHA-256. Opening a model license uses your default browser.
+
+Projects and commands
+Projects are accessed only after you select them. NOIR proposes or applies changes according to your chosen mode and permissions. Commands use disposable Windows AppContainer snapshots with no network capabilities after a local isolation check. This is a bounded command sandbox; system-readable files can remain visible. The operating system and other programs on your device are outside this privacy guarantee.
+
+Storage and deletion
+Chat deletion removes its saved conversation records. Applied project edits remain on disk. Removing a model from the library does not delete its model binary. The uninstaller preserves models, conversations and projects. To remove remaining local data, close NOIR, back up anything you want to retain, and deliberately remove the relevant installation data yourself.
+
+Support, funding and website
+If you email support, you choose what to share. Use synthetic reproduction steps and omit secrets or private work. Contributions are processed by GoFundMe under its own privacy policy. The launch website uses no analytics or marketing trackers added by NoirGen LLC; its hosting provider may use essential authentication, security cookies and access logs. Website activity is separate from the desktop app.
