@@ -12,6 +12,8 @@ The initial installer is unsigned. Code signing is part of the funding plan. Nev
 
 55 isolated checks passed: model transfers and endpoint validation, tool-protocol recovery, scrolling and conversation UI, fresh installation, automatic command isolation, real local replies, deletion during generation, persistence after restart, model switching, and protected Node/Python execution and a Git checkpoint.
 
+The small installer's reconstruction check verifies all 2,115 packaged files against the release manifest and matches the tested application bytes. That final check uses five checksum-verified cached runtime archives. Fresh Node and Python downloads passed checksum checks; the larger transfers were stopped because of connection speed. A complete cold-network installation is not claimed by this test report.
+
 Qwen3 0.6B, Qwen2.5-Coder 1.5B, and SmolLM2 1.7B produced real CPU replies and passed the model-format check. The catalog also offers Qwen2.5-Coder 7B; that download entry is pinned, but this release's new-model test run did not qualify its inference. Model capability and performance vary. These checks do not establish compatibility with every Windows computer or model.
 
 ## Privacy and licensing
