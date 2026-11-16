@@ -1,0 +1,47 @@
+{
+  "version": "1.8.0",
+  "installerSha256": "e621f20cbe8c2b4a883d9a8f28c11b2f0cbda6800a91b0138ef8aeb80326ed2b",
+  "appSha256": "bf3fb06951982183c38224888b3131e8127a48202f18195a067f988d7ba1b04e",
+  "checkedAt": "2026-11-16T20:57:56.434687+00:00",
+  "regressionChecks": 173,
+  "suites": {
+    "organization": 12,
+    "ui": 26,
+    "organization-ui": 14,
+    "downloads": 11,
+    "model-library": 12,
+    "maintenance": 8,
+    "tool-recovery": 18,
+    "release-reliability": 10,
+    "conversations": 8,
+    "clean-start": 4,
+    "stream-completion": 6,
+    "native-installer": 16,
+    "optional-tools": 21,
+    "tools-ui": 7
+  },
+  "hostedWindows": {
+    "passed": true,
+    "run": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/43951978824",
+    "commit": "c328b7ec4a435a42ca0c5c2d0dbd57335daec287",
+    "checks": {
+      "windows-2022": 14,
+      "windows-2025": 17
+    },
+    "freshRuntimeArchivesPerRunner": 5,
+    "freshTextModelsPerRunner": 2,
+    "freshImageModelOnWindows2025": true
+  },
+  "publicColdWindows10": {
+    "passed": true,
+    "filesVerified": 2119,
+    "freshRuntimeArchives": 5,
+    "recoveredInterruption": true
+  },
+  "dualRtx3060ModelsPassed": true,
+  "cpuAndBothVulkanDevicesPassed": true,
+  "updateRollbackPreservesSyntheticData": true,
+  "windowsAuthenticodeSigned": false,
+  "sourcePublished": false,
+  "ownerProjectsOrConversationsRead": false
+}
