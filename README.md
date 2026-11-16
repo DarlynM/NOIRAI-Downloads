@@ -6,7 +6,7 @@ This repository contains release documentation, public distribution metrics, fee
 
 [Watch the 90-second demonstration](https://youtu.be/99Vkqxu7wh4) · [Download the latest release](https://github.com/DarlynM/NOIRAI-Downloads/releases/latest) · [First-run guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html) · [Support development](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone)
 
-Chat with compatible local models, keep conversations, review code edits, and run protected tools. NOIR 1.8.1 offers eight pinned downloads, including four community uncensored / abliterated models: Huihui Qwen 4B and 27B, Dolphin 3 8B, and MeroMero 26B-A4B. Browse the complete catalog directly from the top model menu. Search or filter the catalog, resume interrupted model downloads, import a compatible text GGUF, or connect a supported loopback model server. Model files download separately; compatibility varies.
+Chat with compatible local models, keep conversations, review code edits, and run protected tools. NOIR 1.8.2 offers eight pinned downloads, including four community uncensored / abliterated models: Huihui Qwen 4B and 27B, Dolphin 3 8B, and MeroMero 26B-A4B. Browse the complete catalog directly from the top model menu. Search or filter the catalog, resume interrupted model downloads, import a compatible text GGUF, or connect a supported loopback model server. Model files download separately; compatibility varies.
 
 The desktop shortcut is **NOIRAI**. The app's interface is **NOIR**. The approximately 20 MB installer requires Internet access to download approximately 921 MB of verified runtimes, plus optional Git tools and your chosen models. After setup, managed GGUF inference runs locally.
 
@@ -18,10 +18,12 @@ Support: support@noirgen.com. Use synthetic examples when reporting problems; do
 
 [Progress and roadmap](https://noirgen-noir-launch.etherealtune1.chatgpt.site/progress.html) · [Voluntary hardware report](https://github.com/DarlynM/NOIRAI-Downloads/issues/new?template=hardware.yml) · [Aggregate download observations](https://github.com/DarlynM/NOIRAI-Downloads/tree/main/metrics)
 
-1.7 adds completed-chat moves, create-project-from-chat, undo, draft preservation during navigation, and a streaming completion fix. Memory guidance, private support-report previews, and verified manual updates with rollback are included. [Qualification and release scope](./QUALIFICATION-1.8.1.md).
+1.7 adds completed-chat moves, create-project-from-chat, undo, draft preservation during navigation, and a streaming completion fix. Memory guidance, private support-report previews, and verified manual updates with rollback are included. [Qualification and release scope](./QUALIFICATION-1.8.2.md).
 
 1.8 adds optional local image generation, explicitly approved local MCP calls and selected-window accessibility tools. [Tools and permissions](https://noirgen-noir-launch.etherealtune1.chatgpt.site/tools.html).
 
 [NOIR on X](https://x.com/NoirGenLLC) · [NOIR on TikTok](https://www.tiktok.com/@noirgen_llc)
 
-1.8.1 simplifies Tools with focused image creation, a short plugin connection form, and searchable window controls. It improves recovery after stopped tasks and keeps window access releasable while an action is pending.
+1.8.2 simplifies Tools with focused image creation, a short plugin connection form, and searchable window controls. It improves recovery after stopped tasks and keeps window access releasable while an action is pending.
+
+1.8.2 expands project chats in the sidebar and puts project selection and Enable coding directly in the composer. Model-switch errors recover, and drafts remain intact during setup.
