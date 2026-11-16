@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "observedAt": "2026-11-16T06:40:42.089Z",
+  "observedAt": "2026-11-16T06:54:18.616Z",
   "repository": "DarlynM/NOIRAI-Downloads",
   "definition": "GitHub installer asset download counts. Includes repeats, automated requests and internal QA; not unique people, completed installs, active users or attributable conversions.",
   "totalInstallerDownloads": 14,
-  "previousObservedAt": null,
-  "downloadsSincePrevious": null,
+  "previousObservedAt": "2026-11-16T06:40:42.089Z",
+  "downloadsSincePrevious": 0,
   "removedAssetIds": [],
   "counterRegressions": [],
   "assets": [
