@@ -1,7 +1,7 @@
 [
   {
     "id": "R1",
-    "window": "Nov 17–23",
+    "window": "Nov 17â€“23",
     "priority": "P0",
     "title": "Make first installation predictable",
     "acceptance": "Empty-root download, interruption/retry, low-disk handling and a useful failure message pass isolated tests. Recruit voluntary reports across three RAM/GPU classes. External reports stay separate from verified lab results.",
@@ -13,7 +13,7 @@
   },
   {
     "id": "R2",
-    "window": "Nov 24–30",
+    "window": "Nov 24â€“30",
     "priority": "P0",
     "title": "Keep chat and coding work recoverable",
     "acceptance": "Cancel, delete-during-generation, scroll while streaming, queue release, model switching and resume pass synthetic regressions. No data-loss release ships.",
@@ -25,7 +25,7 @@
   },
   {
     "id": "R3",
-    "window": "Nov 24–30",
+    "window": "Nov 24â€“30",
     "priority": "P1",
     "title": "Explain model memory and coding compatibility",
     "acceptance": "Conservative memory guidance, disk preflight, actionable load errors, and capability results bound to exact model/runtime hashes. No universal model-support claim.",
@@ -36,7 +36,7 @@
   },
   {
     "id": "R4",
-    "window": "Dec 1–7",
+    "window": "Dec 1â€“7",
     "priority": "P1",
     "title": "Offer a small, reviewable support report",
     "acceptance": "Opt-in report shows version, model identifier, RAM/GPU class and sanitized error category. Preview before export; never include chats, project files, private paths, credentials or environment values. Synthetic redaction tests pass.",
@@ -47,7 +47,7 @@
   },
   {
     "id": "R5",
-    "window": "Dec 8–14",
+    "window": "Dec 8â€“14",
     "priority": "P1",
     "title": "Prepare a trustworthy update path",
     "acceptance": "Explicit update choice, hash verification, interruption recovery and rollback are tested in an isolated copy. Preserve user data. Code signing remains funding-dependent; no paid enrollment without approval.",
@@ -58,7 +58,7 @@
   },
   {
     "id": "R6",
-    "window": "Dec 15–16",
+    "window": "Dec 15â€“16",
     "priority": "P2",
     "title": "Publish what the month actually taught us",
     "acceptance": "Report observed download deltas, voluntary install outcomes, fixes and remaining limits. Choose the next release from repeated user problems. Financial totals require owner-supplied gross/fees/net/spend; never infer them from a goal.",
@@ -71,9 +71,21 @@
     "priority": "P1",
     "title": "Finish replies when a local server keeps its stream open",
     "acceptance": "Terminal stream marker releases generation and the connection; the next prompt works. Preserve pre-terminal text, finish reason and usage, fragmented markers, EOF fallback, cancellation and error cleanup. Qualify the exact packaged candidate before marking delivered.",
-    "status": "candidate_tested_not_released",
+    "status": "released",
     "issueUrl": "https://github.com/DarlynM/NOIRAI-Downloads/issues/7",
-    "validation": "Six focused synthetic checks, eight existing conversation regressions, TypeScript validation and private build pass. No production data inspected or application replaced.",
-    "targetVersion": "1.6.1"
+    "validation": "Six focused stream checks plus the 145-check regression suite and exact public-package fresh-install qualification passed.",
+    "targetVersion": "1.7.0",
+    "releasedVersion": "1.7.0",
+    "evidence": "https://github.com/DarlynM/NOIRAI-Downloads/blob/main/QUALIFICATION-1.7.0.md"
+  },
+  {
+    "id": "R8",
+    "window": "Released November 16",
+    "priority": "P1",
+    "title": "Organize completed chats and polish navigation",
+    "status": "released",
+    "releasedVersion": "1.7.0",
+    "acceptance": "Move, create project from chat, undo, rename, keyboard navigation and restart persistence verified with synthetic data.",
+    "evidence": "https://github.com/DarlynM/NOIRAI-Downloads/blob/main/QUALIFICATION-1.7.0.md"
   }
 ]

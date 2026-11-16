@@ -1,47 +1,55 @@
 {
-  "version": "1.5.0",
-  "status": "PASS",
-  "verifiedAt": "2026-11-16T05:37:36.154112+00:00",
-  "installer": {
-    "sha256": "4f23652b4ff868417665e658703729e174ea8662c65e078c4c1807b02278d8db",
-    "bytes": 19981824,
-    "signed": false,
-    "appSha256": "565ca47c68b735e338e2d09e20630ce3c29cac77acb902e675096346bf2efa74"
-  },
-  "isolatedChecks": 78,
+  "version": "1.7.0",
+  "qualifiedAt": "2026-11-16T18:13:41.287511+00:00",
+  "sha256": "33db7035e4f5951ae7f2d0a59f6527ada646dcd0d23137a475a3624f63b9cf77",
+  "bytes": 20004864,
+  "appSha256": "151243db7209decf8a0b277847d50ef9f43cd7f4900e635edb8ad91cb27a700e",
+  "executableSha256": "461ceabe809cc744630619be8fde5d293c982d380853c5829593b2f076c78130",
+  "installerSha256": "33db7035e4f5951ae7f2d0a59f6527ada646dcd0d23137a475a3624f63b9cf77",
+  "filesVerified": 2116,
+  "regressionChecks": 145,
   "suites": {
+    "organization-tests": 12,
+    "ui-tests": 26,
+    "organization-ui-tests": 14,
     "download-tests": 11,
-    "ui-tests": 22,
-    "tool-tests": 17,
     "model-library-tests": 12,
+    "maintenance-tests": 8,
+    "tool-tests": 18,
+    "release-reliability-tests": 10,
+    "conversation-tests": 8,
     "clean-start-tests": 4,
-    "cold-app-first": 9,
-    "cold-app-restart": 3
+    "stream-completion-tests": 6,
+    "native-installer-cases": 16
   },
-  "freshPublicInstallation": {
-    "authenticatedDownload": false,
-    "emptyInstallFolder": true,
-    "runtimeArchivesDownloaded": 5,
-    "preloadedRuntimeArchives": 0,
-    "installedFilesVerified": 2115,
-    "optionalGitDownloaded": true
-  },
-  "realPackagedApplication": {
-    "freshModelDownloads": [
-      "Huihui Qwen 4B",
-      "Qwen Coder 1.5B"
+  "freshHostedWindows": {
+    "passed": true,
+    "workflow": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/43923854575",
+    "environments": [
+      "Windows Server 2022 hosted VM",
+      "Windows Server 2025 hosted VM"
     ],
-    "managedLocalInference": true,
-    "realReplies": true,
-    "restartPersistence": true,
-    "modelSwitching": true,
-    "deleteDuringGeneration": true,
-    "reviewApplyRunRevert": true,
-    "protectedNodeAndPython": true,
-    "gitCheckpoint": true,
-    "historyResetBlocksActiveWork": true,
-    "newReplyAfterHistoryReset": true
+    "checksPerEnvironment": 11,
+    "prepopulatedModelOrRuntimeCache": false
   },
-  "scope": "One Windows x64 computer. Fresh isolated folders and synthetic projects only; not a clean-OS VM or universal device qualification. All 78 checks ran for 1.5.0. Four unchanged uncensored catalog files were qualified in 1.4.0, not rerun or counted here.",
-  "sourcePrivacy": "Only installer, public notices and verification summaries are distributed. Editable application source remains private. Electron bundles are inspectable."
+  "localWindows10": {
+    "freshNetworkInstallation": true,
+    "verifiedCachedRuntimeArchives": 0,
+    "realAppChecks": 11,
+    "npmGitCheckpointChecks": 3,
+    "interruptedModelDownload": "Recovered by explicit in-app retry; downloaded bytes verified; no preseeded models"
+  },
+  "nativeUpdateAndRollbackChecks": 3,
+  "windowsAuthenticodeSigned": false,
+  "ownerInstallation": "ready for authorized installation",
+  "dualGpu170": "PASS both pinned models; actual per-process allocations on both RTX 3060 devices, real replies and coding protocol",
+  "privateProjectsOrConversationsRead": false,
+  "sourcePublished": false,
+  "limits": [
+    "Hosted Server tests do not certify every consumer Windows device.",
+    "AMD and Intel GPU acceleration, ARM, macOS and Linux are not qualified.",
+    "Model behavior and hardware fit vary; no zero-bug or universal compatibility claim.",
+    "One local model transfer required an explicit retry after a publisher interruption; recovery passed."
+  ],
+  "publicRelease": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.7.0"
 }
