@@ -4,7 +4,7 @@ Free local AI for Windows, by NoirGen LLC.
 
 This repository contains release documentation and official Windows installer downloads only. NOIR is proprietary freeware; its development source is private.
 
-[Download the latest release](https://github.com/DarlynM/NOIRAI-Downloads/releases/latest) · [First-run guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html) · [Support development](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone)
+[Watch the 90-second demonstration](https://youtu.be/99Vkqxu7wh4) · [Download the latest release](https://github.com/DarlynM/NOIRAI-Downloads/releases/latest) · [First-run guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html) · [Support development](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone)
 
 Chat with compatible local models, keep conversations, review code edits, and run protected tools. NOIR 1.5.0 offers eight pinned downloads, including four community uncensored / abliterated models: Huihui Qwen 4B and 27B, Dolphin 3 8B, and MeroMero 26B-A4B. Browse the complete catalog directly from the top model menu. Search or filter the catalog, resume interrupted model downloads, import a compatible text GGUF, or connect a supported loopback model server. Model files download separately; compatibility varies.
 
