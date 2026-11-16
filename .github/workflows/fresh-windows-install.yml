@@ -30,4 +30,5 @@ jobs:
         env:
           NOIR_TEST_VERSION: ${{ inputs.version }}
           NOIR_TEST_SHA256: ${{ inputs.sha256 }}
+          NOIR_TEST_IMAGES: ${{ matrix.os == 'windows-2025' && 'true' || 'false' }}
         run: ./qualification/fresh-install.ps1 -Version $env:NOIR_TEST_VERSION -Sha256 $env:NOIR_TEST_SHA256
