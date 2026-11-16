@@ -20,7 +20,8 @@
     "status": "released",
     "issueUrl": "https://github.com/DarlynM/NOIRAI-Downloads/issues/2",
     "releasedVersion": "1.6.0",
-    "evidence": "https://github.com/DarlynM/NOIRAI-Downloads/blob/main/QUALIFICATION-1.6.0.md"
+    "evidence": "https://github.com/DarlynM/NOIRAI-Downloads/blob/main/QUALIFICATION-1.6.0.md",
+    "followUpIssueUrl": "https://github.com/DarlynM/NOIRAI-Downloads/issues/7"
   },
   {
     "id": "R3",
@@ -63,5 +64,16 @@
     "acceptance": "Report observed download deltas, voluntary install outcomes, fixes and remaining limits. Choose the next release from repeated user problems. Financial totals require owner-supplied gross/fees/net/spend; never infer them from a goal.",
     "status": "planned",
     "issueUrl": "https://github.com/DarlynM/NOIRAI-Downloads/issues/6"
+  },
+  {
+    "id": "R7",
+    "window": "Next qualified maintenance release",
+    "priority": "P1",
+    "title": "Finish replies when a local server keeps its stream open",
+    "acceptance": "Terminal stream marker releases generation and the connection; the next prompt works. Preserve pre-terminal text, finish reason and usage, fragmented markers, EOF fallback, cancellation and error cleanup. Qualify the exact packaged candidate before marking delivered.",
+    "status": "candidate_tested_not_released",
+    "issueUrl": "https://github.com/DarlynM/NOIRAI-Downloads/issues/7",
+    "validation": "Six focused synthetic checks, eight existing conversation regressions, TypeScript validation and private build pass. No production data inspected or application replaced.",
+    "targetVersion": "1.6.1"
   }
 ]
