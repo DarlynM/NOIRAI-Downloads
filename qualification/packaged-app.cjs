@@ -8,8 +8,8 @@ async function start(){const port=await new Promise(resolve=>{const s=net.create
 function cdp(method,params){return new Promise((resolve,reject)=>{const id=++sequence,timer=setTimeout(()=>{pending.delete(id);reject(Error('App request timed out'));},900000);pending.set(id,{resolve,reject,timer});ws.send(JSON.stringify({id,method,params}));});}
 async function evaluate(expression){const reply=await cdp('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true});if(reply.exceptionDetails)throw Error(reply.exceptionDetails.exception?.description||reply.exceptionDetails.text);return reply.result?.value;}
 const call=(op,p={})=>evaluate(`window.noirgen.invoke(${JSON.stringify(op)},${JSON.stringify(p)})`);
-async function stop(){await cdp('Page.close',{}).catch(()=>{});ws?.close();await until(()=>child.exitCode!==null||child.signalCode!==null,30000);}
-async function check(name,fn){await fn();checks.push({name,passed:true});console.log('PASS '+name);}
+async function stop(){if(child&&child.exitCode===null&&child.signalCode===null){if(ws?.readyState===WebSocket.OPEN)ws.send(JSON.stringify({id:++sequence,method:'Page.close',params:{}}));await until(()=>child.exitCode!==null||child.signalCode!==null,30000);}ws?.close();for(const item of pending.values()){clearTimeout(item.timer);item.reject(Error('Test application closed'));}pending.clear();}
+async function check(name,fn){console.log('START '+name);await fn();checks.push({name,passed:true});console.log('PASS '+name);}
 async function send(chat,prompt){await call('send',{chat,prompt,mode:'Chat',permissions:{edits:false,commands:false}});await until(async()=>{const s=await call('state');return !s.busy&&s.tasks.some(t=>t.chat===chat&&['complete','failed','cancelled'].includes(t.status));},300000);return call('messages',{chat});}
 async function main(){
  await start();let first,second,saved,project;
