@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: First-run guide
+    url: https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html
+    about: Install NOIR and download your first local model.
+  - name: Private support
+    url: mailto:support@noirgen.com
+    about: Contact support without publishing an issue. Send a synthetic example.

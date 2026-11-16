@@ -12,7 +12,9 @@ The initial installer is unsigned. Code signing is part of the funding plan. Nev
 
 55 isolated checks passed: model transfers and endpoint validation, tool-protocol recovery, scrolling and conversation UI, fresh installation, automatic command isolation, real local replies, deletion during generation, persistence after restart, model switching, and protected Node/Python execution and a Git checkpoint.
 
-The small installer's reconstruction check verifies all 2,115 packaged files against the release manifest and matches the tested application bytes. That final check uses five checksum-verified cached runtime archives. Fresh Node and Python downloads passed checksum checks; the larger transfers were stopped because of connection speed. A complete cold-network installation is not claimed by this test report.
+The public installer was downloaded without authentication and installed into an empty isolated folder. All five runtime archives and optional Git downloaded from their official publishers; no developer runtime cache was preloaded. All 2,115 installed files matched the release manifest. An initial network attempt failed; subsequent empty-folder runs passed, including the installer's normal verification entry point.
+
+Nine additional cold-install application checks passed. The installed application downloaded Qwen3 0.6B and Qwen2.5-Coder 1.5B through its own model library, verified their hashes, produced real CPU replies, restored chats and the selected model after restart, switched models, and executed protected Node/Python tools and Git checkpoint operations. These checks ran on one existing Windows x64 machine with isolated synthetic data; they are not a clean-OS VM or universal device certification.
 
 Qwen3 0.6B, Qwen2.5-Coder 1.5B, and SmolLM2 1.7B produced real CPU replies and passed the model-format check. The catalog also offers Qwen2.5-Coder 7B; that download entry is pinned, but this release's new-model test run did not qualify its inference. Model capability and performance vary. These checks do not establish compatibility with every Windows computer or model.
 
