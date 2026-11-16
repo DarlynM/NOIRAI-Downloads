@@ -1,31 +1,29 @@
-# NOIR 1.3.0 for Windows x64
+# NOIR 1.4.0 for Windows x64
 
-NOIR is a free local AI desktop app by NoirGen LLC. The desktop shortcut is named **NOIRAI**.
+Free local AI by NoirGen LLC. Open **NOIRAI** from the desktop; the interface is **NOIR**.
 
-This release adds a model library with pinned, SHA-256 checked downloads; compatible text GGUF imports; and loopback connections to OpenAI-compatible local servers such as Ollama and LM Studio. Imported models start in chat mode. A synthetic format check enables coding tools; it is not a guarantee of a model's coding quality.
+This release centers model choice: eight pinned downloads, including Huihui Qwen 4B and 27B, Dolphin 3 8B, and MeroMero 26B-A4B. Discover has search and an Uncensored filter. Interrupted model downloads retain verified progress and offer Resume, including after an app restart. Completed downloads must match the pinned SHA-256 before installation.
 
-Download the approximately 20 MB `NOIRAI-1.3.0-Setup.exe`, compare its SHA-256 with `SHA256SUMS.txt`, read the license, and install. An Internet connection is required for setup: the installer automatically downloads approximately 921 MB of pinned Electron, Node, Python, llama.cpp and CUDA runtimes from their official distribution locations, verifies SHA-256 checksums, and creates the desktop shortcut. Optional Git tools add a 38 MB download directly from Git for Windows. Models download separately. Start with a small model and check your available memory and disk space. External servers must be started separately; managed GGUF inference starts with NOIR.
+Compatible text GGUF imports and loopback model-server connections remain available. Managed GGUF inference starts with the app; external servers must be started separately. Coding qualification now checks a two-turn create/result/finish exchange. The agent clearly distinguishes review proposals from applied edits and returns control after finishing. Model quality and compatibility vary.
 
-The initial installer is unsigned. Code signing is part of the funding plan. Never bypass an antivirus detection; report it with the release filename and checksum.
+## Install
+
+Download `NOIRAI-1.4.0-Setup.exe` and compare its SHA-256 with `SHA256SUMS.txt`. The approximately 20 MB installer downloads about 921 MB of pinned runtimes from their official publishers, plus optional Git (38 MB). Models are separate downloads with their own licenses. Start with a small model that fits your available RAM and VRAM.
+
+The installer is unsigned. Code signing is a funding priority. Do not disable security protection to work around a detection; send the warning and checksum to support@noirgen.com.
 
 ## Verification
 
-55 isolated checks passed: model transfers and endpoint validation, tool-protocol recovery, scrolling and conversation UI, fresh installation, automatic command isolation, real local replies, deletion during generation, persistence after restart, model switching, and protected Node/Python execution and a Git checkpoint.
+72 isolated checks passed across downloads, model library, UI/scrolling/history, tool recovery and review, four uncensored models, and the actual packaged app. The final public installer was downloaded without authentication and installed into an empty folder with no preloaded runtime cache. All five runtime archives and optional Git downloaded from their publishers; all 2,115 installed files verified.
 
-The public installer was downloaded without authentication and installed into an empty isolated folder. All five runtime archives and optional Git downloaded from their official publishers; no developer runtime cache was preloaded. All 2,115 installed files matched the release manifest. An initial network attempt failed; subsequent empty-folder runs passed, including the installer's normal verification entry point.
+The installed app freshly downloaded Huihui Qwen 4B and Qwen Coder 1.5B through its own library, generated real local replies, restored conversations and its model after restart, and switched models. Deleting a conversation during generation released the queue. Actual protected Node and Python commands, Git checkpointing, and a real uncensored-model edit followed by review, apply, execution and revert passed. Its installer-created shortcut opened a native window that produced another real reply and left the composer usable.
 
-Nine additional cold-install application checks passed. The installed application downloaded Qwen3 0.6B and Qwen2.5-Coder 1.5B through its own model library, verified their hashes, produced real CPU replies, restored chats and the selected model after restart, switched models, and executed protected Node/Python tools and Git checkpoint operations. These checks ran on one existing Windows x64 machine with isolated synthetic data; they are not a clean-OS VM or universal device certification.
+The four uncensored candidates passed integrity checks, benign CPU replies and two-turn coding checks. Huihui 4B/27B and MeroMero used native calls; Dolphin used structured JSON. These results come from one Windows computer with synthetic data, not a clean-OS VM or universal hardware qualification. See `RELEASE-VERIFICATION.json` for the exact scope and installer hash.
 
-Qwen3 0.6B, Qwen2.5-Coder 1.5B, and SmolLM2 1.7B produced real CPU replies and passed the model-format check. The catalog also offers Qwen2.5-Coder 7B; that download entry is pinned, but this release's new-model test run did not qualify its inference. Model capability and performance vary. These checks do not establish compatibility with every Windows computer or model.
+## Privacy and support
 
-## Privacy and licensing
+NOIR is proprietary freeware. Editable application source, private conversations, projects, settings and model weights are not published. Compiled application bundles must ship to run the app and can be inspected; packaging is not encryption. The app has no telemetry or cloud-model fallback. Downloads contact publishers; external local servers have their own behavior. Uninstall preserves local chats, models and projects.
 
-NOIR is proprietary freeware. No editable application source, development repository, private conversations, projects, production settings or model weights are included in this repository or installer. Compiled desktop bundles ship as required to run the application and can be inspected; packaging is not encryption.
+[First-run guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html) · [Model guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/models.html) · [Report a synthetic reproduction](https://github.com/DarlynM/NOIRAI-Downloads/issues/new/choose)
 
-The app has no telemetry or cloud-model fallback. Model downloads contact their publisher only when selected. External local servers have their own privacy and networking behavior. Read `PRIVACY.txt` and `LICENSE.txt`; third-party notices are included in the installer.
-
-Uninstall preserves local chats, models and project data. Keep your own backups. Review model-generated edits and commands before approving them.
-
-Support: support@noirgen.com. Send version, model and reproduction steps using a synthetic example.
-
-Optional development support: https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone
+[Optional development support](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone). Initial goal: $10,000 USD. No purchase is required. Support: support@noirgen.com.
