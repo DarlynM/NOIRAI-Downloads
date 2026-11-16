@@ -1,6 +1,6 @@
 {
   "version": "1.7.0",
-  "qualifiedAt": "2026-11-16T18:13:41.287511+00:00",
+  "qualifiedAt": "2026-11-16T13:13:41.287511-05:00",
   "sha256": "33db7035e4f5951ae7f2d0a59f6527ada646dcd0d23137a475a3624f63b9cf77",
   "bytes": 20004864,
   "appSha256": "151243db7209decf8a0b277847d50ef9f43cd7f4900e635edb8ad91cb27a700e",
@@ -41,8 +41,8 @@
   },
   "nativeUpdateAndRollbackChecks": 3,
   "windowsAuthenticodeSigned": false,
-  "ownerInstallation": "ready for authorized installation",
-  "dualGpu170": "PASS both pinned models; actual per-process allocations on both RTX 3060 devices, real replies and coding protocol",
+  "ownerInstallation": "installed and launched through NOIRAI.lnk",
+  "dualGpu170": "passed both public large candidates on two RTX 3060 devices",
   "privateProjectsOrConversationsRead": false,
   "sourcePublished": false,
   "limits": [
