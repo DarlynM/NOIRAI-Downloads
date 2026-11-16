@@ -1,0 +1,33 @@
+name: Fresh public Windows installation
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Public candidate release version
+        required: true
+        type: string
+      sha256:
+        description: Reviewed public installer SHA-256
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  fresh-install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-2022, windows-2025]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Download, install and exercise the public app
+        shell: pwsh
+        env:
+          NOIR_TEST_VERSION: ${{ inputs.version }}
+          NOIR_TEST_SHA256: ${{ inputs.sha256 }}
+        run: ./qualification/fresh-install.ps1 -Version $env:NOIR_TEST_VERSION -Sha256 $env:NOIR_TEST_SHA256
