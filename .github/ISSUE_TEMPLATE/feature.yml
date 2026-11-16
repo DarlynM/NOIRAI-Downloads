@@ -1,0 +1,21 @@
+name: Suggest a useful improvement
+description: Describe the task you cannot complete comfortably.
+title: "[Idea] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Use a synthetic example. Do not include private work.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would a good result look like?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: NOIR version and model, if relevant

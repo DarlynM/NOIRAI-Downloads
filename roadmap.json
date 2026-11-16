@@ -1,0 +1,50 @@
+[
+  {
+    "id": "R1",
+    "window": "Nov 17–23",
+    "priority": "P0",
+    "title": "Make first installation predictable",
+    "acceptance": "Empty-root download, interruption/retry, low-disk handling and a useful failure message pass isolated tests. Recruit voluntary reports across three RAM/GPU classes. External reports stay separate from verified lab results.",
+    "status": "planned"
+  },
+  {
+    "id": "R2",
+    "window": "Nov 24–30",
+    "priority": "P0",
+    "title": "Keep chat and coding work recoverable",
+    "acceptance": "Cancel, delete-during-generation, scroll while streaming, queue release, model switching and resume pass synthetic regressions. No data-loss release ships.",
+    "status": "planned"
+  },
+  {
+    "id": "R3",
+    "window": "Nov 24–30",
+    "priority": "P1",
+    "title": "Explain model memory and coding compatibility",
+    "acceptance": "Conservative memory guidance, disk preflight, actionable load errors, and capability results bound to exact model/runtime hashes. No universal model-support claim.",
+    "status": "planned"
+  },
+  {
+    "id": "R4",
+    "window": "Dec 1–7",
+    "priority": "P1",
+    "title": "Offer a small, reviewable support report",
+    "acceptance": "Opt-in report shows version, model identifier, RAM/GPU class and sanitized error category. Preview before export; never include chats, project files, private paths, credentials or environment values. Synthetic redaction tests pass.",
+    "status": "planned"
+  },
+  {
+    "id": "R5",
+    "window": "Dec 8–14",
+    "priority": "P1",
+    "title": "Prepare a trustworthy update path",
+    "acceptance": "Explicit update choice, hash verification, interruption recovery and rollback are tested in an isolated copy. Preserve user data. Code signing remains funding-dependent; no paid enrollment without approval.",
+    "status": "planned"
+  },
+  {
+    "id": "R6",
+    "window": "Dec 15–16",
+    "priority": "P2",
+    "title": "Publish what the month actually taught us",
+    "acceptance": "Report observed download deltas, voluntary install outcomes, fixes and remaining limits. Choose the next release from repeated user problems. Financial totals require owner-supplied gross/fees/net/spend; never infer them from a goal.",
+    "status": "planned"
+  }
+]

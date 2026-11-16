@@ -1,0 +1,63 @@
+name: Share a voluntary hardware result
+description: Help test NOIR with synthetic tasks. Reports are public and initially unverified.
+title: "[Hardware] "
+body:
+  - type: markdown
+    attributes:
+      value: "Share only these nonpersonal fields. Never upload conversations, project files, device IDs, usernames, private paths, credentials or full logs. Do not repeat a report for the same setup."
+  - type: input
+    id: version
+    attributes:
+      label: NOIR version and Windows version
+      placeholder: "NOIR 1.5.0; Windows 11"
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: RAM and GPU model or CPU-only
+      placeholder: "16 GB RAM; CPU-only"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model name, quantization and context length
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Furthest completed step
+      options:
+        - Installer completed
+        - Model downloaded and loaded
+        - First local reply completed
+        - Chat returned after restart
+        - Synthetic coding check passed
+        - A step failed
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Synthetic task and result
+      description: "Use a disposable example. Optional timing is a personal observation, not a benchmark."
+  - type: dropdown
+    id: source
+    attributes:
+      label: Where did you find NOIR? (optional)
+      options:
+        - Prefer not to say
+        - YouTube
+        - Instagram
+        - Bluesky
+        - Friend or creator
+        - Search or directory
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Public report
+      options:
+        - label: "I checked that this contains no private content and understand it is a public, voluntary, unverified report."
+          required: true

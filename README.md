@@ -2,7 +2,7 @@
 
 Free local AI for Windows, by NoirGen LLC.
 
-This repository contains release documentation and official Windows installer downloads only. NOIR is proprietary freeware; its development source is private.
+This repository contains release documentation, public distribution metrics, feedback forms and official Windows installer downloads. NOIR is proprietary freeware; its development source is private.
 
 [Watch the 90-second demonstration](https://youtu.be/99Vkqxu7wh4) · [Download the latest release](https://github.com/DarlynM/NOIRAI-Downloads/releases/latest) · [First-run guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html) · [Support development](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone)
 
@@ -15,3 +15,5 @@ Read the release notes, requirements, license and privacy notice before installi
 Support: support@noirgen.com. Use synthetic examples when reporting problems; do not include private projects, conversations or credentials.
 
 [Report a reproducible problem](https://github.com/DarlynM/NOIRAI-Downloads/issues/new/choose) · [Press kit](https://noirgen-noir-launch.etherealtune1.chatgpt.site/press.html) · [NOIR on Bluesky](https://bsky.app/profile/noirgenai.bsky.social) · [NOIR on Instagram](https://www.instagram.com/noirgen.ai/) · [NOIR on YouTube](https://www.youtube.com/@NoirGen-AI) · [Model guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/models.html)
+
+[Progress and roadmap](https://noirgen-noir-launch.etherealtune1.chatgpt.site/progress.html) · [Voluntary hardware report](https://github.com/DarlynM/NOIRAI-Downloads/issues/new?template=hardware.yml) · [Aggregate download observations](https://github.com/DarlynM/NOIRAI-Downloads/tree/main/metrics)
