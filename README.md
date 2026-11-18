@@ -6,9 +6,9 @@ This repository contains release documentation, public distribution metrics, fee
 
 [Watch a 30-second local image demonstration](https://youtube.com/shorts/0nhqi6nuC6A) · [Download the latest release](https://github.com/DarlynM/NOIRAI-Downloads/releases/latest) · [First-run guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html) · [Support development](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone)
 
-Chat with compatible local models, keep conversations, review code edits, and run protected tools. NOIR 1.8.6 offers eight pinned downloads, including four community uncensored / abliterated models: Huihui Qwen 4B and 27B, Dolphin 3 8B, and MeroMero 26B-A4B. Browse the complete catalog directly from the top model menu. Search or filter the catalog, resume interrupted model downloads, import a compatible text GGUF, or connect a supported loopback model server. Model files download separately; compatibility varies.
+Chat with compatible local models, keep conversations, review code edits, and run protected tools. NOIR offers eight pinned downloads, including four community uncensored / abliterated models: Huihui Qwen 4B and 27B, Dolphin 3 8B, and MeroMero 26B-A4B. Browse the complete catalog directly from the top model menu. Search or filter the catalog, resume interrupted model downloads, import a compatible text GGUF, or connect a supported loopback model server. Model files download separately; compatibility varies.
 
-The desktop shortcut is **NOIRAI**. The app's interface is **NOIR**. The approximately 20 MB installer requires Internet access to download approximately 921 MB of verified runtimes, plus optional Git tools and your chosen models. After setup, managed GGUF inference runs locally.
+The desktop shortcut is **NOIRAI**. The app's interface is **NOIR**. The approximately 94 MB installer requires Internet access to download approximately 921 MB of verified runtimes, plus optional Git tools and your chosen models. After setup, managed GGUF inference runs locally.
 
 Read the release notes, requirements, license and privacy notice before installing. Initial releases are unsigned. Verify the published SHA-256 and use only this official release location.
 
@@ -33,3 +33,6 @@ Support: support@noirgen.com. Use synthetic examples when reporting problems; do
 1.8.4 keeps attached files and failed drafts with their chat, prevents stale project/search results during navigation, improves keyboard composition and dialog shortcuts, and preserves readable chat space beside the inspector. [1.8.4 qualification](./QUALIFICATION-1.8.4.md).
 
 1.8.6 adds in-chat search, improves scrolling as images appear, and gives you control over exactly which chats a paired phone can see. Moving a shared chat into a project revokes its phone access. The iPhone companion is in TestFlight. [Read the 1.8.6 qualification results](./QUALIFICATION-1.8.6.md).
+## Version 1.9.1
+
+Use the Noir title menu to choose Private or Cloud. Bring your existing provider subscription to its official service, sign in to OpenRouter, or connect an API key for a conversation inside Noir. Native cloud history can be encrypted and synced across devices. File and media tools let you review extracted text before sending. [Qualification and limits](./QUALIFICATION-1.9.1.md) · [Help with provider accounts and privacy](https://noirgen-noir-launch.etherealtune1.chatgpt.site/support.html)
