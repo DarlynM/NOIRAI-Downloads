@@ -1,55 +1,42 @@
 {
-  "version": "1.7.0",
-  "qualifiedAt": "2026-11-16T13:13:41.287511-05:00",
-  "sha256": "33db7035e4f5951ae7f2d0a59f6527ada646dcd0d23137a475a3624f63b9cf77",
-  "bytes": 20004864,
-  "appSha256": "151243db7209decf8a0b277847d50ef9f43cd7f4900e635edb8ad91cb27a700e",
-  "executableSha256": "461ceabe809cc744630619be8fde5d293c982d380853c5829593b2f076c78130",
-  "installerSha256": "33db7035e4f5951ae7f2d0a59f6527ada646dcd0d23137a475a3624f63b9cf77",
-  "filesVerified": 2116,
-  "regressionChecks": 145,
-  "suites": {
-    "organization-tests": 12,
-    "ui-tests": 26,
-    "organization-ui-tests": 14,
-    "download-tests": 11,
-    "model-library-tests": 12,
-    "maintenance-tests": 8,
-    "tool-tests": 18,
-    "release-reliability-tests": 10,
-    "conversation-tests": 8,
-    "clean-start-tests": 4,
-    "stream-completion-tests": 6,
-    "native-installer-cases": 16
+  "version": "1.9.5",
+  "date": "2026-11-18",
+  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.9.5",
+  "installer": {
+    "bytes": 94361088,
+    "sha256": "829c4e2afeb6331e79da622669adb39ae12722e1f7896deee3ac2022e04c5d54",
+    "appSha256": "556b99bd9695599656ca482af635ff830103d16b0eba9467725b4691ed32babf",
+    "authenticode": "unsigned",
+    "updateReceipt": "Ed25519 signature and installer bytes checked by the app verification function"
   },
-  "freshHostedWindows": {
-    "passed": true,
-    "workflow": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/43923854575",
-    "environments": [
-      "Windows Server 2022 hosted VM",
-      "Windows Server 2025 hosted VM"
-    ],
-    "checksPerEnvironment": 11,
-    "prepopulatedModelOrRuntimeCache": false
+  "cleanWindowsQualification": {
+    "status": "PASS",
+    "run": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44389033213",
+    "checksByHost": {
+      "windows-2022": 20,
+      "windows-2025": 23
+    },
+    "freshFilesVerified": 2140,
+    "freshRuntimeArchives": 5,
+    "freshRuntimeArchiveBytes": 920831610
   },
-  "localWindows10": {
-    "freshNetworkInstallation": true,
-    "verifiedCachedRuntimeArchives": 0,
-    "realAppChecks": 11,
-    "npmGitCheckpointChecks": 3,
-    "interruptedModelDownload": "Recovered by explicit in-app retry; downloaded bytes verified; no preseeded models"
+  "regression": {
+    "desktopCore": 39,
+    "cloudAndMedia": 12,
+    "companionBackendAndTransport": 42,
+    "providerPickerAndPricing": 9,
+    "installedAppAndLiveRelay": 10,
+    "nativeSignInSyntheticCases": 5,
+    "liveNegativeProviderChecks": 5
   },
-  "nativeUpdateAndRollbackChecks": 3,
-  "windowsAuthenticodeSigned": false,
-  "ownerInstallation": "installed and launched through NOIRAI.lnk",
-  "dualGpu170": "passed both public large candidates on two RTX 3060 devices",
-  "privateProjectsOrConversationsRead": false,
-  "sourcePublished": false,
-  "limits": [
-    "Hosted Server tests do not certify every consumer Windows device.",
-    "AMD and Intel GPU acceleration, ARM, macOS and Linux are not qualified.",
-    "Model behavior and hardware fit vary; no zero-bug or universal compatibility claim.",
-    "One local model transfer required an explicit retry after a publisher interruption; recovery passed."
-  ],
-  "publicRelease": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.7.0"
+  "optionalProviders": {
+    "positiveStreaming": "Synthetic provider responses",
+    "realInvalidCredentials": "Rejection verified by all five providers",
+    "providerBilledGeneration": "Not run"
+  },
+  "iphone": {
+    "version": "1.9.5",
+    "nativeQualification": "Pending",
+    "published": false
+  }
 }

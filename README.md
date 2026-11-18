@@ -2,6 +2,12 @@
 
 Free local AI for Windows, by NoirGen LLC.
 
+## Windows 1.9.5
+
+Choose a local model or connect your own OpenAI, Claude, Gemini, Mistral or OpenRouter API key. Before a cloud send, Noir shows which messages will go to the provider. Local chat and provider connections are free in Noir. Each provider sets its own API prices.
+
+[Download 1.9.5](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.9.5) · [Watch the 27-second demo](https://noirgen-noir-launch.etherealtune1.chatgpt.site/#demo) · [Read the release checks](QUALIFICATION-1.9.5.md)
+
 This repository contains release documentation, public distribution metrics, feedback forms and official Windows installer downloads. NOIR is proprietary freeware; its development source is private.
 
 [Watch a 30-second local image demonstration](https://youtube.com/shorts/0nhqi6nuC6A) · [Download the latest release](https://github.com/DarlynM/NOIRAI-Downloads/releases/latest) · [First-run guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html) · [Support development](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone)
