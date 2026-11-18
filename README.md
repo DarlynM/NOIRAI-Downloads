@@ -33,6 +33,12 @@ Support: support@noirgen.com. Use synthetic examples when reporting problems; do
 1.8.4 keeps attached files and failed drafts with their chat, prevents stale project/search results during navigation, improves keyboard composition and dialog shortcuts, and preserves readable chat space beside the inspector. [1.8.4 qualification](./QUALIFICATION-1.8.4.md).
 
 1.8.6 adds in-chat search, improves scrolling as images appear, and gives you control over exactly which chats a paired phone can see. Moving a shared chat into a project revokes its phone access. The iPhone companion is in TestFlight. [Read the 1.8.6 qualification results](./QUALIFICATION-1.8.6.md).
+## Version 1.9.3
+
+In Cloud chat, select OpenAI, Claude, Gemini or Mistral to use the provider’s own API key. OpenRouter is optional. A saved OpenRouter connection no longer changes your choice of provider. Before sending, Noir shows the destination, the selected history and the account supplying the quota.
+
+NoirGen has requested ChatGPT subscription access. Personal Claude and Gemini subscriptions currently offer no sign-in for native Noir chat. Eligible plans may include separate API credits you can use through a linked provider account. [Provider access guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html#spaces) · [1.9.3 verification](./QUALIFICATION-1.9.3.md)
+
 ## Version 1.9.2
 
 Choose the model beside Send to switch between a local model and a connected cloud provider in the same standalone chat. Noir shows where each reply came from. Before a cloud send, choose the new message alone, this connection’s history, or earlier cloud messages across providers. Local messages and project files stay on your devices.
