@@ -2,7 +2,22 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 module.exports=async({call,check,until,root,project})=>{
  const file=name=>path.join(root,'workspaces','SYNTHETIC_RELEASE_CHECK',name);
- const finish=chat=>until(async()=>{const s=await call('state');return !s.busy&&s.tasks.some(t=>t.chat===chat&&['complete','review','approval','failed','limited','cancelled'].includes(t.status))&&s;},360000);
+ async function finish(chat) {
+  const started=Date.now();let nextReport=started+45000;
+  const terminal=new Set(['complete','review','approval','failed','limited','cancelled']);
+  return until(async()=>{
+   const state=await call('state');
+   const task=state.tasks.find(item=>item.chat===chat);
+   if(task&&!state.busy&&terminal.has(task.status))return state;
+   if(Date.now()>=nextReport){
+    nextReport=Date.now()+45000;
+    const detail=task?await call('taskDetail',{id:task.id}):null;
+    const events=detail?.events||detail?.activity||[];
+    console.log('CPU coding check',JSON.stringify({seconds:Math.round((Date.now()-started)/1000),status:task?.status,busy:state.busy,changes:state.changes.filter(c=>task?.run&&c.run===task.run).length,events:events.length}));
+   }
+   return false;
+  },900000);
+ }
  async function send(mode,prompt,permissions={edits:false,commands:false}){const chat=await call('newChat',{project});await call('send',{chat,prompt,mode,permissions});const state=await finish(chat);return{chat,state,task:state.tasks.find(t=>t.chat===chat)};}
  await call('save',{project,path:'review_math.cjs',before:null,after:'module.exports = (a, b) => a - b;\n'});
  await check('Review finishes real findings and enforces read-only tools',async()=>{const r=await send('Review','Read review_math.cjs. This function should add numbers. Report its bug with the file and line. Do not edit or run commands.',{edits:true,commands:true});assert.equal(r.task.status,'complete',r.task.error);assert.ok((await call('messages',{chat:r.chat})).some(m=>m.role==='assistant'&&/subtract|minus|a\s*-\s*b|addition|add/i.test(m.content)));assert.match(fs.readFileSync(file('review_math.cjs'),'utf8'),/a - b/);assert.ok(!r.state.changes.some(c=>c.run===r.task.run));});
