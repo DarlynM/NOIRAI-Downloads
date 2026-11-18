@@ -33,6 +33,12 @@ Support: support@noirgen.com. Use synthetic examples when reporting problems; do
 1.8.4 keeps attached files and failed drafts with their chat, prevents stale project/search results during navigation, improves keyboard composition and dialog shortcuts, and preserves readable chat space beside the inspector. [1.8.4 qualification](./QUALIFICATION-1.8.4.md).
 
 1.8.6 adds in-chat search, improves scrolling as images appear, and gives you control over exactly which chats a paired phone can see. Moving a shared chat into a project revokes its phone access. The iPhone companion is in TestFlight. [Read the 1.8.6 qualification results](./QUALIFICATION-1.8.6.md).
+## Version 1.9.2
+
+Choose the model beside Send to switch between a local model and a connected cloud provider in the same standalone chat. Noir shows where each reply came from. Before a cloud send, choose the new message alone, this connection’s history, or earlier cloud messages across providers. Local messages and project files stay on your devices.
+
+Sign in with OpenRouter or connect a direct provider API key. Each reply stays in Noir. Optional encrypted sync copies the cloud portion of a conversation. [Qualification and limits](./QUALIFICATION-1.9.2.md) · [Provider and privacy guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html#spaces)
+
 ## Version 1.9.1
 
 Use the Noir title menu to choose Private or Cloud. Bring your existing provider subscription to its official service, sign in to OpenRouter, or connect an API key for a conversation inside Noir. Native cloud history can be encrypted and synced across devices. File and media tools let you review extracted text before sending. [Qualification and limits](./QUALIFICATION-1.9.1.md) · [Help with provider accounts and privacy](https://noirgen-noir-launch.etherealtune1.chatgpt.site/support.html)
