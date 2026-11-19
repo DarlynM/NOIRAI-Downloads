@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:01,990
+This dot is trying to get home.
+
+2
+00:00:02,000 --> 00:00:05,120
+I asked a model running on my PC to build the game.
+
+3
+00:00:05,200 --> 00:00:07,070
+Here’s the change it proposed.
+
+4
+00:00:07,200 --> 00:00:09,690
+I could read the diff before I applied it.
+
+5
+00:00:09,760 --> 00:00:12,070
+Running the tests needed a separate click.
+
+6
+00:00:12,080 --> 00:00:15,130
+I watched the timer and the steps on my phone.
+
+7
+00:00:15,280 --> 00:00:16,940
+Then I tried the reset.
+
+8
+00:00:17,020 --> 00:00:19,120
+Right, reset, down.
+
+9
+00:00:19,200 --> 00:00:21,210
+Right back where the test said I’d be.
