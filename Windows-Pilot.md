@@ -42,7 +42,7 @@ The first delivery totals are 51 ordered and 49 received. Recount the washers an
 
 ## Tell us how it went
 
-Reply to the person who invited you, or [email NoirGen’s pilot mailbox](mailto:social@noirgen.com?subject=Noir%20Windows%20pilot%20result). One line is enough. Choose whichever describes your experience:
+Reply to the person who invited you or [email NoirGen’s pilot mailbox](mailto:social@noirgen.com?subject=Noir%20Windows%20pilot%20result). If you use GitHub, you can also [report a pilot result or setup blocker publicly](https://github.com/DarlynM/NOIRAI-Downloads/issues/new?template=windows-pilot.yml). One line is enough. Choose whichever describes your experience:
 
 - **Ran it** — Windows PC or GPU, model name, missing/extra counts on each turn, and the first thing that slowed you down.
 - **Stopped during setup** — the step you reached and what you saw.
