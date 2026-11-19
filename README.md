@@ -2,11 +2,13 @@
 
 Free local AI for Windows, by NoirGen LLC.
 
-## Windows 1.9.6
+## Windows 1.12.1
 
-Choose a local model or connect your own OpenAI, Claude, Gemini, Mistral or OpenRouter API key. Before a cloud send, Noir shows which messages will go to the provider. Local chat and provider connections are free in Noir. Each provider sets its own API prices.
+Download Noir for Windows x64. Run a local model on your PC or connect your own provider API key. Review which messages go to a cloud provider before sending. Provider charges depend on your account.
 
-[Download 1.9.6](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.9.6) · [Watch the 27-second demo](https://noirgen-noir-launch.etherealtune1.chatgpt.site/#demo) · [Test your own API keys (PDF)](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.9.6/Noir-Quick-Check.pdf) · [Read the release checks](QUALIFICATION-1.9.6.md)
+[Download Windows 1.12.1](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.12.1/NOIRAI-1.12.1-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.12.1) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.12.1/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.12.1.md)
+
+The download has been verified from an empty installation. The Windows installer is unsigned. On iPhone, 1.12.1 build 20004 is available to internal TestFlight testers. The App Store submission is set to release automatically when Apple approves it.
 
 This repository contains release documentation, public distribution metrics, feedback forms and official Windows installer downloads. NOIR is proprietary freeware; its development source is private.
 
