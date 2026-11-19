@@ -6,6 +6,10 @@ on:
         description: Public candidate release version
         required: true
         type: string
+      clipboard_only:
+        description: Run the native clipboard checks only
+        type: boolean
+        default: false
       sha256:
         description: Reviewed public installer SHA-256
         required: true
@@ -28,6 +32,7 @@ jobs:
       - name: Download, install and exercise the public app
         shell: pwsh
         env:
+          NOIR_CLIPBOARD_ONLY: ${{ inputs.clipboard_only }}
           NOIR_TEST_VERSION: ${{ inputs.version }}
           NOIR_TEST_SHA256: ${{ inputs.sha256 }}
           NOIR_TEST_IMAGES: ${{ matrix.os == 'windows-2025' && 'true' || 'false' }}

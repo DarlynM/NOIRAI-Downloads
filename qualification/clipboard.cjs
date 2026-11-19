@@ -29,6 +29,27 @@ module.exports = async function({cdp,evaluate,check,until}) {
   await check('Right-click Paste reads a real Windows clipboard bitmap',async()=>{
     putImage();await focus();await pasteMenu();await until(async()=>await chips()===1,30000);await remove();
   });
+  async function explorerCopy() {
+    const script = "$ErrorActionPreference='Stop'\nAdd-Type -AssemblyName System.Windows.Forms\n$dir=Join-Path $env:RUNNER_TEMP 'noir-synthetic-clipboard'\n[IO.Directory]::CreateDirectory($dir)|Out-Null\n$list=New-Object Collections.Specialized.StringCollection\nforeach($name in @('Orchids.csv','Sample.unknown')){$p=Join-Path $dir $name;[IO.File]::WriteAllText($p,'Synthetic files only');[void]$list.Add($p)}\n[Windows.Forms.Clipboard]::SetFileDropList($list)";
+    execFileSync('powershell.exe',['-NoProfile','-NonInteractive','-STA','-EncodedCommand',Buffer.from(script,'utf16le').toString('base64')],{windowsHide:true,stdio:'pipe'});
+  }
+  async function verifyExplorerFiles() {
+    await until(async()=>await chips()===2,10000);
+    const labels=await evaluate('Array.from(document.querySelectorAll(".noir-chip")).map(e=>e.textContent).join(" ")');
+    assert.match(labels,/Orchids\.csv/i);assert.match(labels,/Sample\.unknown/i);
+    for (let count=2;count>0;count--){await evaluate('document.querySelector(".noir-chip button").click()');await until(async()=>await chips()===count-1,4000);}
+  }
+  await check('Right-click Paste accepts two Windows Explorer file objects',async()=>{
+    await explorerCopy();await focus();await pasteMenu();await verifyExplorerFiles();
+  });
+  await check('Ctrl+V accepts two Windows Explorer file objects',async()=>{
+    await explorerCopy();await focus();
+    await cdp('Input.dispatchKeyEvent',{type:'rawKeyDown',key:'Control',code:'ControlLeft',windowsVirtualKeyCode:17,modifiers:2});
+    await cdp('Input.dispatchKeyEvent',{type:'rawKeyDown',key:'v',code:'KeyV',windowsVirtualKeyCode:86,modifiers:2});
+    await cdp('Input.dispatchKeyEvent',{type:'keyUp',key:'v',code:'KeyV',windowsVirtualKeyCode:86,modifiers:2});
+    await cdp('Input.dispatchKeyEvent',{type:'keyUp',key:'Control',code:'ControlLeft',windowsVirtualKeyCode:17});
+    await verifyExplorerFiles();
+  });
   await check('Right-click Paste inserts plain text at the cursor',async()=>{
     execFileSync('powershell.exe',['-NoProfile','-NonInteractive','-STA','-Command',"Add-Type -AssemblyName System.Windows.Forms; [Windows.Forms.Clipboard]::SetText('Garden inventory')"],{windowsHide:true});
     await focus();await pasteMenu();await until(()=>evaluate('document.querySelector('+JSON.stringify(selector)+').value==="Garden inventory"'),6000);
