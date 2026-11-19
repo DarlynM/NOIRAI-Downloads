@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "observedAt": "2026-11-18T19:24:23.064Z",
+  "observedAt": "2026-11-19T19:29:17.399Z",
   "repository": "DarlynM/NOIRAI-Downloads",
   "definition": "GitHub installer asset download counts. Includes repeats, automated requests and internal QA; not unique people, completed installs, active users or attributable conversions.",
-  "totalInstallerDownloads": 64,
-  "previousObservedAt": "2026-11-17T19:51:13.835Z",
-  "downloadsSincePrevious": 23,
+  "totalInstallerDownloads": 79,
+  "previousObservedAt": "2026-11-18T19:24:23.064Z",
+  "downloadsSincePrevious": 15,
   "removedAssetIds": [],
   "counterRegressions": [],
   "assets": [
@@ -106,6 +106,27 @@
       "name": "NOIRAI-1.9.3-Setup.exe",
       "downloads": 4,
       "bytes": 94356992
+    },
+    {
+      "assetId": 764840388,
+      "version": "v1.9.5",
+      "name": "NOIRAI-1.9.5-Setup.exe",
+      "downloads": 6,
+      "bytes": 94361088
+    },
+    {
+      "assetId": 765453485,
+      "version": "v1.9.6",
+      "name": "NOIRAI-1.9.6-Setup.exe",
+      "downloads": 7,
+      "bytes": 94361088
+    },
+    {
+      "assetId": 768416994,
+      "version": "v1.12.1",
+      "name": "NOIRAI-1.12.1-Setup.exe",
+      "downloads": 2,
+      "bytes": 94423040
     }
   ]
 }
