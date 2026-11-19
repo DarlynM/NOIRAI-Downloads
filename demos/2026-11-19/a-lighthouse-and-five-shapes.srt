@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:02,800
+This lighthouse started as one sentence.
+
+2
+00:00:02,850 --> 00:00:05,400
+I picked the seed, pressed Create,
+
+3
+00:00:05,400 --> 00:00:07,630
+and my PC drew the image.
+
+4
+00:00:07,850 --> 00:00:10,550
+Then I tried something completely different.
+
+5
+00:00:10,650 --> 00:00:12,430
+I pasted a shape card into chat
+
+6
+00:00:12,430 --> 00:00:14,300
+and dropped in a spreadsheet.
+
+7
+00:00:14,350 --> 00:00:15,900
+Three triangles.
+
+8
+00:00:15,900 --> 00:00:17,470
+Two circles.
+
+9
+00:00:17,520 --> 00:00:19,550
+One row I could actually save.

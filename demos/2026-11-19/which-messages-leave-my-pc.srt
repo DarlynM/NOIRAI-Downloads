@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,000
+I wanted a second opinion on a parts count.
+
+2
+00:00:03,000 --> 00:00:05,170
+I started on my own PC.
+
+3
+00:00:05,170 --> 00:00:06,910
+Then I picked a cloud model.
+
+4
+00:00:06,910 --> 00:00:08,680
+See that little review?
+
+5
+00:00:08,680 --> 00:00:12,930
+It shows exactly which messages I’m about to send.
+
+6
+00:00:13,120 --> 00:00:16,120
+One more check, back on my PC.
+
+7
+00:00:16,120 --> 00:00:17,750
+Same conversation.
+
+8
+00:00:17,750 --> 00:00:18,700
+That’s Noir.
