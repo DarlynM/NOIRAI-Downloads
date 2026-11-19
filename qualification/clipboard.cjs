@@ -13,7 +13,7 @@ module.exports = async function({cdp,evaluate,check,until}) {
   async function pasteMenu(){
     const pt=await evaluate('(()=>{const b=document.querySelector('+JSON.stringify(selector)+').getBoundingClientRect();return [b.x+16,b.y+12]})()');
     await clickAt(...pt,'right');
-    const pos=await until(()=>evaluate('(()=>{const e=[...document.querySelectorAll(\\'[role="menuitem"]\\')].find(n=>n.textContent.trim()==="Paste");if(!e)return null;const b=e.getBoundingClientRect();return [b.x+b.width/2,b.y+b.height/2]})()'),10000);
+    const pos=await until(()=>evaluate('(()=>{const e=[...document.querySelectorAll(\'[role="menuitem"]\')].find(n=>n.textContent.trim()==="Paste");if(!e)return null;const b=e.getBoundingClientRect();return [b.x+b.width/2,b.y+b.height/2]})()'),10000);
     await clickAt(...pos,'left');
   }
   const chips=()=>evaluate('document.querySelectorAll(".noir-chip").length');
