@@ -11,6 +11,7 @@ body:
     attributes:
       label: How far did you get?
       options:
+        - I have not run it yet
         - Ran both prompts
         - Ran the first prompt
         - Stopped during setup
