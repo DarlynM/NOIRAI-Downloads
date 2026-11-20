@@ -1,6 +1,6 @@
 NOIR privacy notice
 
-Publisher: NoirGen LLC. Contact: support@noirgen.com. Updated November 20, 2026 for Windows 1.12.1 and iOS companion build 20004.
+Publisher: NoirGen LLC. Contact: support@noirgen.com. Updated November 20, 2026 for Windows 1.12.2 and iOS companion build 20004.
 
 Local mode works without an account. The app contains no telemetry or advertising SDK. Optional cloud chats and optional encrypted cloud chat sync are described below. Conversations, settings, and approved project metadata are stored locally in the selected installation folder. Windows may separately create paging, diagnostic, security and crash records.
 

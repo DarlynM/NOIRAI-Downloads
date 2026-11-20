@@ -105,5 +105,129 @@
     "currentPhysicalDeviceHandoffAndTimerVerified": false
   },
   "hostedInstallationRun": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44830136933",
-  "details": "QUALIFICATION-1.12.2.md"
+  "details": "QUALIFICATION-1.12.2.md",
+  "updates": {
+    "low-space": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 2.23
+    },
+    "interrupted": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 9.28
+    },
+    "upgrade": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 42.27
+    },
+    "rollback": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 3.56
+    }
+  },
+  "regressions": {
+    "desktop": [
+      {
+        "suite": "run-activity-tests",
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      {
+        "suite": "stream-completion-tests",
+        "tests": 12,
+        "pass": 12,
+        "fail": 0
+      },
+      {
+        "suite": "pending-edits-tests",
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      {
+        "suite": "organization-tests",
+        "tests": 12,
+        "pass": 12,
+        "fail": 0
+      },
+      {
+        "suite": "chat-tools-tests",
+        "tests": 21,
+        "pass": 21,
+        "fail": 0
+      },
+      {
+        "suite": "conversation-tests",
+        "tests": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      {
+        "suite": "clean-start-tests",
+        "tests": 1,
+        "pass": 1,
+        "fail": 0
+      },
+      {
+        "suite": "image-library-tests",
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      {
+        "suite": "release-reliability-tests",
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      {
+        "suite": "core-tests",
+        "tests": 64,
+        "pass": 64,
+        "fail": 0
+      },
+      {
+        "suite": "model-download-tests",
+        "tests": 13,
+        "pass": 13,
+        "fail": 0
+      },
+      {
+        "suite": "tool-recovery-tests",
+        "tests": 30,
+        "pass": 30,
+        "fail": 0
+      },
+      {
+        "suite": "model-library-tests",
+        "tests": 12,
+        "pass": 12,
+        "fail": 0
+      },
+      {
+        "suite": "maintenance-tests",
+        "tests": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      {
+        "suite": "cloud-qa.test",
+        "tests": 14,
+        "pass": 14,
+        "fail": 0
+      },
+      {
+        "suite": "toolbox-tests-180",
+        "tests": 21,
+        "pass": 21,
+        "fail": 0
+      }
+    ],
+    "desktopChecksPassed": 237,
+    "companionTransportChecksPassed": 45
+  }
 }

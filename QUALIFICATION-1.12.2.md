@@ -19,6 +19,14 @@ Using ordinary chat on a Windows 10 Home workstation with an Intel i7-12700KF an
 
 These are observed answers to four specific prompts per model. A CPU-only consumer laptop was not part of this hardware run.
 
+## Regression checks
+
+237 checks passed across 16 desktop suites. They covered the task queue, chat and model switching, protected commands, recovery, reviewed edits, updater verification and cloud-provider fixtures. Another 45 companion transport checks passed.
+
+## Updating from 1.12.1
+
+A disposable installation passed low-space rejection, recovery after an interrupted update, upgrade to 1.12.2 and rollback to 1.12.1. All 2,144 files matched the expected manifest after each operation. Synthetic chat, model and project files survived throughout.
+
 ## iPhone and iPad
 
 Windows 1.12.2 and a software phone peer paired through the real desktop QR and trust controls over the live encrypted relay. The pair caught up after a desktop restart, retained conflicting versions for resolution, transferred attachments byte-for-byte both ways and revoked access. A physical Wi-Fi-to-cellular handoff and the activity timer on a real device running iOS build 20004 still need testing.
