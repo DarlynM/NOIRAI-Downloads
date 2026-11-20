@@ -1,15 +1,15 @@
 {
-  "version": "1.13.0",
-  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.13.0",
+  "version": "1.14.0",
+  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.0",
   "installer": {
-    "version": "1.13.0",
+    "version": "1.14.0",
     "anonymousPublicDownload": true,
     "files": 2144,
-    "bytes": 94450176,
-    "sha256": "b5e6cc5022242fa19180515ec198f4316093b6a0303f57dd8fec116904820738",
-    "appSha256": "e3f50c08f0a704f1bcddc9423fcd96aca4451628b9e0ab9a44f185f7574982df",
+    "bytes": 94473728,
+    "sha256": "f2248f3507665400f830350f70fdb7107766156eade1770407ac373762d14ecf",
+    "appSha256": "d1d60d180cca47c0a79aeb73115a6a9e57b0ea9bd6f6596cdb016a45d1b21a0d",
     "ed25519Verified": true,
-    "installerSeconds": 130.5,
+    "installerSeconds": 138.2,
     "emptyCache": true,
     "runtimeArchives": [
       "Electron",
@@ -18,50 +18,77 @@
       "llama.cpp",
       "CUDA"
     ],
-    "utc": "2026-11-20T23:19:38.618778+00:00"
+    "utc": "2026-11-20T23:57:18.834338+00:00"
   },
   "authenticode": "unsigned",
+  "assets": [
+    "NOIRAI-1.14.0-Setup.exe",
+    "NOIRAI-1.14.0-update.json",
+    "SHA256SUMS.txt",
+    "Noir-Quick-Start.md",
+    "Noir-receiving-desk-pilot.pdf",
+    "Noir-receiving-desk.zip"
+  ],
   "regression": {
-    "windows": 249,
-    "desktopSuites": 16,
-    "companionTransport": 49
+    "windows": 261,
+    "suites": 16,
+    "skipped": 0
   },
   "installerLifecycle": {
     "low-space": {
       "filesVerified": 2144,
       "syntheticDataMarkers": 3,
-      "seconds": 1.8
+      "seconds": 1.88
     },
     "interrupted": {
       "filesVerified": 2144,
       "syntheticDataMarkers": 3,
-      "seconds": 8.31
+      "seconds": 8.22
     },
     "upgrade": {
       "filesVerified": 2144,
       "syntheticDataMarkers": 3,
-      "seconds": 33.61
+      "seconds": 34.27
     },
     "rollback": {
       "filesVerified": 2144,
       "syntheticDataMarkers": 3,
-      "seconds": 3.03
+      "seconds": 3.06
     }
   },
   "hostedWindows": {
-    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44835553577",
+    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44840139387",
     "jobs": [
-      "Windows Server 2022: failed second model arithmetic assertion",
-      "Windows Server 2025: failed second model arithmetic assertion"
+      "Windows 2022 (running)",
+      "Windows 2025 (running)"
     ]
   },
-  "flows": {
-    "noModelCalculator": "(24 + 6) / 3 = 10",
-    "localModel": "Huihui Qwen 4B",
-    "automaticTool": "147 cartons at $38.60 plus $127.45 freight = $5,801.65",
-    "modelQuestion": "One live 4B run produced a working customer-choice card and two-sentence announcement; two subsequent runs recited the question syntax instead.",
-    "history": "Jumped to an earlier message in a 90-message chat",
-    "cloud": "Provider-stream fixtures and explicit local result sharing; no paid cloud request recorded in this release check",
-    "pairing": "Encrypted public relay between real Windows app and a synthetic phone peer. Not a physical iPhone test."
+  "publicGitHub": {
+    "actualProvider": true,
+    "repository": "DarlynM/NOIRAI-Downloads",
+    "returnedIssues": 7,
+    "authorizationHeaderSent": false
+  },
+  "providerAccountTests": "Scoped authenticated transport and error tests with fixtures. Public GitHub exercised live. See release notes for additional account results.",
+  "phone": "The final Windows code paired through the real relay with current and older synthetic phone peers and verified catalog visibility, files, reconnect, conflict and revocation.",
+  "projectWorkspace": {
+    "uiChecks": [
+      "Empty workspace hides unavailable actions, keyboard tabs work, project created through Files",
+      "Created nested file, edited with Monaco, saved, searched content and toggled attachment",
+      "Changes history opened the actual applied edit and diff",
+      "Created and corrected a durable project note and saved the project summary",
+      "Tasks queued a planner from the UI, retained its project and recorded cancellation",
+      "Reopened the application and independently verified file bytes, memory, project configuration and task history"
+    ],
+    "actualLocalModel": "Qwen3.8 27B \u2014 Huihui Abliterated",
+    "restartChecks": {
+      "project": true,
+      "chats": 2,
+      "originalTaskIds": 2,
+      "memory": true,
+      "literalSearch": true,
+      "isolated": true
+    },
+    "protectedSuitesPassedAfterRestart": 2
   }
 }

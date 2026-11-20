@@ -1,0 +1,67 @@
+{
+  "version": "1.13.0",
+  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.13.0",
+  "installer": {
+    "version": "1.13.0",
+    "anonymousPublicDownload": true,
+    "files": 2144,
+    "bytes": 94450176,
+    "sha256": "b5e6cc5022242fa19180515ec198f4316093b6a0303f57dd8fec116904820738",
+    "appSha256": "e3f50c08f0a704f1bcddc9423fcd96aca4451628b9e0ab9a44f185f7574982df",
+    "ed25519Verified": true,
+    "installerSeconds": 130.5,
+    "emptyCache": true,
+    "runtimeArchives": [
+      "Electron",
+      "Node",
+      "Python",
+      "llama.cpp",
+      "CUDA"
+    ],
+    "utc": "2026-11-20T23:19:38.618778+00:00"
+  },
+  "authenticode": "unsigned",
+  "regression": {
+    "windows": 249,
+    "desktopSuites": 16,
+    "companionTransport": 49
+  },
+  "installerLifecycle": {
+    "low-space": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 1.8
+    },
+    "interrupted": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 8.31
+    },
+    "upgrade": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 33.61
+    },
+    "rollback": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 3.03
+    }
+  },
+  "hostedWindows": {
+    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44835553577",
+    "jobs": [
+      "Windows Server 2022: failed second model arithmetic assertion",
+      "Windows Server 2025: failed second model arithmetic assertion"
+    ]
+  },
+  "flows": {
+    "noModelCalculator": "(24 + 6) / 3 = 10",
+    "localModel": "Huihui Qwen 4B",
+    "automaticTool": "147 cartons at $38.60 plus $127.45 freight = $5,801.65",
+    "modelQuestion": "One live 4B run produced a working customer-choice card and two-sentence announcement; two subsequent runs recited the question syntax instead.",
+    "history": "Jumped to an earlier message in a 90-message chat",
+    "cloud": "Provider-stream fixtures and explicit local result sharing; no paid cloud request recorded in this release check",
+    "pairing": "Encrypted public relay between real Windows app and a synthetic phone peer. Not a physical iPhone test."
+  }
+}

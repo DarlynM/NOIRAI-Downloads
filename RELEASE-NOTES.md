@@ -1,5 +1,13 @@
 # Noir for Windows
 
+## Windows 1.14.0
+
+A single model picker and Tools directory live in the chat composer. In the project panel, a file search opens the matching line, Changes lists pending and applied edits, Tasks tracks project runs, and Memory supports creating and editing notes.
+
+Search the Tools directory for Gmail, Google Drive, Google Calendar, Slack or GitHub. Review the requested scope, select a connection, and approve the read from your chat. Public GitHub can search without a token. A model can propose a connected tool. The outgoing query and provider appear in the approval, and a cloud model receives local results only after a separate review.
+
+[Windows release and checksum](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.0) · [Release checks](QUALIFICATION-1.14.0.md) · [Tools guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/tools.html)
+
 ## Windows 1.13.0
 
 Open **Tools** in chat or the sidebar. Search the directory, add Calculator, World Clock or Text tools, and choose which tools a model can use. Custom local MCP connections and selected-window computer assistance use the same review controls.

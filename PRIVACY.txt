@@ -1,6 +1,6 @@
 NOIR privacy notice
 
-Publisher: NoirGen LLC. Contact: support@noirgen.com. Effective for Windows version 1.13.0.
+Publisher: NoirGen LLC. Contact: support@noirgen.com. Effective for Windows version 1.14.0.
 
 Local mode works without an account. The app contains no telemetry or advertising SDK. Optional cloud chats and optional encrypted cloud chat sync are described below. Conversations, settings, and approved project metadata are stored locally in the selected installation folder. Windows may separately create paging, diagnostic, security and crash records.
 
@@ -66,3 +66,10 @@ Worksheet inputs are saved in the local app profile. Copy result places the disp
 
 Workspace tools and conversation history
 The bundled Calculator, World Clock and Text tools process their inputs on the device. On Windows, enabled MCP connections can offer additional tools. Review the selected tool, arguments and destination when Noir requests approval. A connected service can have its own network and data practices. In a cloud conversation, review the outgoing message and any local material or tool result you choose to include. History and activity controls navigate data already available in the current workspace.
+
+Connected apps
+Gmail, Google Drive, Google Calendar, Slack and GitHub are optional read-only connections. A search or read calls the named service and sends that service the query or item identifier. The service receives the request from the device running the tool. Search results may contain personal or team information. Review the requested action before running it. Review any local result separately before sharing it with a cloud model. GitHub public search also contacts GitHub and works without a GitHub account.
+
+Connector credentials are separate from model provider accounts. Windows protects saved connector credentials on this PC. A trusted phone does not receive those credentials as model keys. Remove a connection from Noir to remove its local credentials. Revoke a grant or token with its provider to invalidate it elsewhere. Each provider controls access, rate limits and retention on its systems.
+
+For the built-in Google connector sign-in on Windows, your browser handles Google consent. NoirGen’s authorization service exchanges the code and refreshes that connector’s credentials with Google. A single read-only permission is requested for the chosen connector. The search and read requests go directly from the device to Google. Using a desktop OAuth client you supply exchanges the code directly with Google.

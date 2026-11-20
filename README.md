@@ -2,9 +2,11 @@
 
 Free local AI for Windows, by NoirGen LLC.
 
-## Windows 1.13.0
+## Windows 1.14.0
 
-Open **Tools** from the chat composer. Add Calculator, World Clock or Text tools, connect a local MCP server, or select a window for computer assistance. Try Calculator with `(24 + 6) / 3` before downloading a model.
+Open **Tools** in the composer. Connect Gmail, Google Drive, Google Calendar, Slack or GitHub to search and read with the access you choose. Select public GitHub to search repositories without an account. For an offline calculation, add Calculator and enter `(24 + 6) / 3`.
+
+Use the project panel to edit and search files, inspect changes, track tasks and save memory for later chats.
 
 Keep local and connected cloud replies in the same chat or project. Choose the model beside the composer and review the text you share. Use **Chat history** to jump to an earlier message and **Run log** to inspect recorded actions. When a model asks for a decision, choose an answer or write your own.
 
@@ -14,15 +16,15 @@ Keep local and connected cloud replies in the same chat or project. Choose the m
 
 Download Noir for Windows x64. Run a local model on your PC or connect your own provider API key. Review which messages go to a cloud provider before sending. Provider charges depend on your account.
 
-[Download Windows 1.13.0](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.13.0/NOIRAI-1.13.0-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.13.0) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.13.0/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.13.0.md)
+[Download Windows 1.14.0](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.0/NOIRAI-1.14.0-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.0) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.0/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.14.0.md)
 
-The download has been verified from an empty installation. The Windows installer is unsigned. On iPhone, 1.12.1 build 20004 is available to internal TestFlight testers. The App Store submission is set to release automatically when Apple approves it.
+The download has been verified from an empty installation. The Windows installer is unsigned. On iPhone and iPad, internal testers have access to 1.13.0 build 20005. Apple is reviewing external beta access. The separate 1.12.1 App Store submission is set to release automatically upon approval.
 
 This repository contains release documentation, public distribution metrics, feedback forms and official Windows installer downloads. NOIR is proprietary freeware; its development source is private.
 
 [Watch a 30-second local image demonstration](https://youtube.com/shorts/0nhqi6nuC6A) · [Download the latest release](https://github.com/DarlynM/NOIRAI-Downloads/releases/latest) · [First-run guide](https://noirgen-noir-launch.etherealtune1.chatgpt.site/start.html) · [Support development](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone)
 
-Chat with compatible local models, keep conversations, review code edits, and run protected tools. NOIR offers eight pinned downloads, including four community uncensored / abliterated models: Huihui Qwen 4B and 27B, Dolphin 3 8B, and MeroMero 26B-A4B. Browse the complete catalog directly from the top model menu. Search or filter the catalog, resume interrupted model downloads, import a compatible text GGUF, or connect a supported loopback model server. Model files download separately; compatibility varies.
+Chat with compatible local models, keep conversations, review code edits, and run protected tools. NOIR offers eight pinned downloads, including four community uncensored / abliterated models: Huihui Qwen 4B and 27B, Dolphin 3 8B, and MeroMero 26B-A4B. Browse the complete catalog by choosing **Browse all models** in the chat composer’s model picker. Search or filter the catalog, resume interrupted model downloads, import a compatible text GGUF, or connect a supported loopback model server. Model files download separately; compatibility varies.
 
 The desktop shortcut is **NOIRAI**. The app's interface is **NOIR**. The approximately 94 MB installer requires Internet access to download approximately 921 MB of verified runtimes, plus optional Git tools and your chosen models. After setup, managed GGUF inference runs locally.
 
