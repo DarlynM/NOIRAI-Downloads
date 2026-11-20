@@ -1,0 +1,246 @@
+{
+  "version": "1.12.2",
+  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.12.2",
+  "installer": {
+    "sha256": "3819e013d1c8ee15183c88ccd910738afc59099d8beacbe9fbec2b2a5ecf7d22",
+    "bytes": 94427648,
+    "authenticode": "unsigned",
+    "ed25519ReceiptVerified": true,
+    "filesVerified": 2144,
+    "emptyCache": true,
+    "runtimeArchivesVerified": [
+      "Electron",
+      "Node",
+      "Python",
+      "llama.cpp",
+      "CUDA"
+    ],
+    "optionalGit": "2.56.1.windows.1",
+    "appAsarSha256": "4715e347160cd8e5670963234682a2abbf5290dc7c26e5faf88eade349f3e86a"
+  },
+  "verifiedAssets": [
+    "NOIRAI-1.12.2-Setup.exe",
+    "NOIRAI-1.12.2-update.json",
+    "Noir-Quick-Start.md",
+    "Noir-receiving-desk-pilot.pdf",
+    "Noir-receiving-desk.zip",
+    "SHA256SUMS.txt"
+  ],
+  "installSeconds": 130.6,
+  "utc": "2026-11-20T22:37:30.197923+00:00",
+  "firstUse": {
+    "platform": "Windows 10 Home x64",
+    "cpu": "Intel i7-12700KF",
+    "cudaCards": [
+      "RTX 3060 12 GB",
+      "RTX 3060 12 GB"
+    ],
+    "ordinaryChat": {
+      "promptsPerModel": 4,
+      "cpuPrompts": 2,
+      "cudaPrompts": 2,
+      "correctReplies": {
+        "Huihui Qwen 4B": 4,
+        "Qwen 3 0.6B": 3
+      },
+      "savedRepliesAfterRestart": 8
+    },
+    "physicalCpuOnlyLaptopTested": false
+  },
+  "receivingDesk": {
+    "modelOrKeyNeededForWorksheet": false,
+    "worksheetSavedAcrossRestart": true,
+    "counts": [
+      "missing",
+      "extra"
+    ],
+    "publishedOrder": [
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "differentOrder": [
+      [
+        19,
+        14
+      ],
+      [
+        19,
+        17
+      ]
+    ],
+    "reorderedColumns": [
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        6
+      ]
+    ],
+    "localChatChecked": true
+  },
+  "companion": {
+    "version": "1.12.1",
+    "build": 20004,
+    "appleStatus": "WAITING_FOR_REVIEW",
+    "releaseSetting": "AFTER_APPROVAL",
+    "queueDescriptionVerified": true,
+    "phonePeer": "software phone over hosted encrypted relay",
+    "tests": [
+      "Packaged desktop paired through the visible QR and trust controls over the live encrypted relay",
+      "Synthetic phone received the desktop project and its first file",
+      "Both sides caught up after the packaged PC restarted; replay of the phone edit was idempotent",
+      "An actual concurrent edit retained both alternatives until explicit resolution",
+      "Two original attachments crossed the encrypted connection in opposite directions; both byte sequences matched",
+      "Both originals appeared in the packaged desktop Chat files menu",
+      "Revoking the synthetic phone removed its session"
+    ],
+    "currentPhysicalDeviceHandoffAndTimerVerified": false
+  },
+  "hostedInstallationRun": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44830136933",
+  "details": "QUALIFICATION-1.12.2.md",
+  "updates": {
+    "low-space": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 2.23
+    },
+    "interrupted": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 9.28
+    },
+    "upgrade": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 42.27
+    },
+    "rollback": {
+      "filesVerified": 2144,
+      "syntheticDataMarkers": 3,
+      "seconds": 3.56
+    }
+  },
+  "regressions": {
+    "desktop": [
+      {
+        "suite": "run-activity-tests",
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      {
+        "suite": "stream-completion-tests",
+        "tests": 12,
+        "pass": 12,
+        "fail": 0
+      },
+      {
+        "suite": "pending-edits-tests",
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      {
+        "suite": "organization-tests",
+        "tests": 12,
+        "pass": 12,
+        "fail": 0
+      },
+      {
+        "suite": "chat-tools-tests",
+        "tests": 21,
+        "pass": 21,
+        "fail": 0
+      },
+      {
+        "suite": "conversation-tests",
+        "tests": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      {
+        "suite": "clean-start-tests",
+        "tests": 1,
+        "pass": 1,
+        "fail": 0
+      },
+      {
+        "suite": "image-library-tests",
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      {
+        "suite": "release-reliability-tests",
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      {
+        "suite": "core-tests",
+        "tests": 64,
+        "pass": 64,
+        "fail": 0
+      },
+      {
+        "suite": "model-download-tests",
+        "tests": 13,
+        "pass": 13,
+        "fail": 0
+      },
+      {
+        "suite": "tool-recovery-tests",
+        "tests": 30,
+        "pass": 30,
+        "fail": 0
+      },
+      {
+        "suite": "model-library-tests",
+        "tests": 12,
+        "pass": 12,
+        "fail": 0
+      },
+      {
+        "suite": "maintenance-tests",
+        "tests": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      {
+        "suite": "cloud-qa.test",
+        "tests": 14,
+        "pass": 14,
+        "fail": 0
+      },
+      {
+        "suite": "toolbox-tests-180",
+        "tests": 21,
+        "pass": 21,
+        "fail": 0
+      }
+    ],
+    "desktopChecksPassed": 237,
+    "companionTransportChecksPassed": 45
+  },
+  "hostedWindows": {
+    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44830136933",
+    "jobs": [
+      {
+        "name": "fresh-install (windows-2025)",
+        "conclusion": "success"
+      },
+      {
+        "name": "fresh-install (windows-2022)",
+        "conclusion": "success"
+      }
+    ]
+  }
+}

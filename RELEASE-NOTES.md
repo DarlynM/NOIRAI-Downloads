@@ -1,5 +1,13 @@
 # Noir for Windows
 
+## Windows 1.13.0
+
+Open **Tools** in chat or the sidebar. Search the directory, add Calculator, World Clock or Text tools, and choose which tools a model can use. Custom local MCP connections and selected-window computer assistance use the same review controls.
+
+Switch models inside a chat or project. The cloud sharing preview lets you include specific earlier local messages. Cloud tool requests show their proposed action and keep the result on your PC until you review sending it back. Chat history jumps to an earlier turn. Run log shows recorded steps and results. Models can ask a question with selectable answers and a free-text option.
+
+[Windows release and checksums](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.13.0) · [Release checks](QUALIFICATION-1.13.0.md) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.13.0/Noir-Quick-Start.md)
+
 ## Windows 1.12.2
 
 Open **Receiving desk** in the sidebar to reconcile two deliveries. Rename items, edit the quantities, add or remove rows, and copy a calculated result. The worksheet saves your edits on this PC. It works before your first model download. In local Chat, Noir can also calculate a structured receiving request and update a previously calculated shipment.
