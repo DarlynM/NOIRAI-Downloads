@@ -1,11 +1,19 @@
 NOIR privacy notice
 
-Publisher: NoirGen LLC. Contact: support@noirgen.com. Effective for version 1.3.0.
+Publisher: NoirGen LLC. Contact: support@noirgen.com. Updated November 20, 2026 for Windows 1.12.1 and iOS companion build 20004.
 
-The desktop application has no app-account requirement, telemetry, advertising SDK, or built-in remote cloud-model endpoint. Conversations, settings, and approved project metadata are stored locally in the selected installation folder. Windows may separately create paging, diagnostic, security and crash records.
+Local mode works without an account. The app contains no telemetry or advertising SDK. Optional cloud chats and optional encrypted cloud chat sync are described below. Conversations, settings, and approved project metadata are stored locally in the selected installation folder. Windows may separately create paging, diagnostic, security and crash records.
 
 Model inference
 NOIR sends the current conversation and selected project context to its local inference service or a loopback server you explicitly connect. External local servers can have their own cloud or network features. Their behavior is controlled outside NOIR. Review the server's settings before sending sensitive information.
+
+Optional phone pairing
+
+Pairing starts when you enable Phone connection, scan or enter the temporary code, and approve the named phone on Windows. With Selected chats only, you choose which chats the phone can access. With Trust and sync, the approved phone can receive chat history, original chat attachments, supported editable project files and supported saved direct provider API keys. Both apps must be reachable for paired sync to catch up. The phone stores imported direct API keys in its device-only Keychain. Standalone cloud chat can use a configured provider while the PC is off.
+
+Chat contents are encrypted between your devices using authenticated HPKE before reaching the relay. Cloudflare handles network metadata such as IP addresses, timing and traffic size. The relay does not persist chat contents or pairing secrets. Windows protects the saved device keys using its local cryptographic storage. The iPhone companion uses device-only Keychain storage. This does not protect against malware running as you on an endpoint. Revoke a device in Settings to remove its access. Revocation does not erase anything already displayed or copied on that device.
+
+For remote access to a model running on your PC, keep the PC awake, online, and running NOIR. The phone reconnects when it returns to the foreground and a network is available; continuous background operation is not guaranteed. Free service limits or outages can interrupt relay access. See the Noir download page for the current iPhone release channel.
 
 Model downloads
 When you choose Download, NOIR contacts Hugging Face and its file-delivery hosts to obtain the selected model. Those hosts receive normal network request data, such as your IP address and the model requested. Model downloads do not include chats or project contents. Downloaded models are checked against a pinned SHA-256. Opening a model license uses your default browser.
@@ -14,10 +22,42 @@ Projects and commands
 Projects are accessed only after you select them. NOIR proposes or applies changes according to your chosen mode and permissions. Commands use disposable Windows AppContainer snapshots with no network capabilities after a local isolation check. This is a bounded command sandbox; system-readable files can remain visible. The operating system and other programs on your device are outside this privacy guarantee.
 
 Storage and deletion
-Chat deletion removes its saved conversation records. Applied project edits remain on disk. Removing a model from the library does not delete its model binary. The uninstaller preserves models, conversations and projects. To remove remaining local data, close NOIR, back up anything you want to retain, and deliberately remove the relevant installation data yourself.
+Chat deletion removes its saved conversation records. Clear conversation history removes all chats and activity/edit history from the active application database. It does not erase existing backups or exports, project files, installed models, or operating-system records. Applied project edits remain on disk. Removing a model from the library does not delete its model binary. The uninstaller preserves models, conversations and projects. To remove remaining local data, close NOIR, back up anything you want to retain, and deliberately remove the relevant installation data yourself.
+
+Optional diagnostics and updates
+Support reports are generated only when you choose Preview report. They contain the app/OS version, coarse RAM/VRAM classes, a catalog model identifier or imported model hash, and a selected error category. They exclude conversation text, project contents, credentials, usernames, private paths and raw error logs. Export saves the exact preview locally. No report is uploaded automatically. Update settings read local version information. View releases opens GitHub only on your request; update receipts are verified locally.
 
 Support, funding and website
 If you email support, you choose what to share. Use synthetic reproduction steps and omit secrets or private work. Contributions are processed by GoFundMe under its own privacy policy. The launch website uses no analytics or marketing trackers added by NoirGen LLC; its hosting provider may use essential authentication, security cookies and access logs. Website activity is separate from the desktop app.
 
 Installer downloads
 The small installer retrieves pinned Electron, Node.js, Python, llama.cpp and CUDA runtime archives from GitHub, nodejs.org and python.org. Each archive and installed file is verified by SHA-256. Those providers receive normal download request metadata, including the network address. No project or conversation content is sent. An Internet connection is required for first installation; model inference then runs locally.
+
+
+NOIR 1.8 optional tools
+Images generate on your PC. Image runtime downloads come from the pinned stable-diffusion.cpp GitHub release; the optional starter checkpoint downloads from Hugging Face. Image prompts and generated PNGs stay in your local library. Export strips embedded model metadata.
+
+MCP connections are opt-in and restricted to an explicit loopback server. NOIR discovers tools without executing them. Each tool call requires approval. Plugins run outside the coding sandbox and may use their own network access and permissions; review the provider before enabling a connection. Optional tokens are encrypted with Windows protection.
+
+Computer control requires selecting a window. NOIR checks its process identity and supports selected-window inspection and individual approved changes. Access is not persisted across app restarts. Password field values are excluded from the accessibility snapshot; a selected-window screenshot may include other private content visible in that window.
+
+Optional cloud chats
+A standalone conversation can contain local and cloud replies. Before a cloud send you can review the destination, the message you typed or added from a file, and which earlier cloud turns are included. The default includes eligible turns from the same device connection. For OpenRouter it also matches the routed model. You can send only the new message, or explicitly share earlier cloud turns from other providers. Private turns, project files, drafts and tool output are excluded from automatic model and sync sharing. Text you manually put in a new cloud message is sent when you confirm. The provider receives your IP address and request metadata and applies its own pricing, limits, logging and retention terms. OpenRouter also routes requests to a model host. NOIR requests a data-collection opt-out for that route. OpenAI requests set store to false. Both measures are subject to provider policy. Connecting or refreshing a provider contacts it to list models. API keys are protected by Windows device encryption or the iPhone Keychain. You can enter a key on each device or explicitly transfer supported direct keys to an approved iPhone using Trust and sync.
+
+Optional NOIR Sync
+Signing into the same NOIR Sync account copies cloud chat titles and messages across devices, including existing unassigned cloud chats. Your passphrase derives an encryption key on your device. The sync service stores encrypted chat events, an opaque account identifier and delivery metadata. It uses Cloudflare for transport and storage. Network addresses are used for rate limiting. Private PC chats, project files, drafts, original photos, microphone recordings and model API keys are excluded. Sign out to stop syncing on a device. Delete the sync account to erase the server copy. Copies saved on devices remain until you remove them there. The passphrase is needed to recover access.
+
+Files, camera and microphone
+Use Add to message to choose a file or photo, scan with the camera, or dictate. Extracted text is shown for your review before it enters the draft. Windows OCR and the bundled Whisper model run on the PC. The iPhone uses Vision and on-device speech recognition where supported. The app requests camera and microphone access when you use the associated controls. For OCR or dictation, the reviewed text enters your draft. Separately, attaching a file to a chat can save the original in its local library. The cloud sharing preview lets you choose eligible image or media content for a provider. Sending reviewed text from a cloud chat shares the text with its named provider. On Windows, temporary input files are removed after processing. Your operating system and any file provider you choose control their own caches and retention.
+
+Provider sign-in and subscriptions
+The Google and Claude account connections in this build are private pilots. Google sign-in requests permission to use Gemini and uses the quota of the Google Cloud project you specify. On Windows, NoirGen’s sign-in service forwards the authorization exchange and token renewals to Google. On iPhone these exchanges go directly to Google. The device protects the resulting credentials. Chat requests go directly to Google.
+
+When an eligible Claude Platform administrator links a directly billed organization, Anthropic presents a spending limit and consent screen. NoirGen associates that connection with an opaque identifier for the Noir sync account. The sign-in service encrypts the connection credentials and gives the device short-lived access for that customer. Chat requests go directly to Anthropic. Anthropic processes linked usage under the operator organization’s data arrangements. Contact support@noirgen.com before using this pilot for regulated information. Unlinking ends the billing connection across devices. Direct Claude API keys and local models use their existing independent connections.
+
+Noir stores the adult general-use confirmation for Claude on the device. It asks for no birth date.
+Provider conversations are displayed and saved inside Noir. Direct API billing depends on the provider account. OpenRouter offers a browser sign-in for native Noir chats. It issues a device-protected credential using PKCE and charges eligible usage to the connected OpenRouter account. On iPhone, a one-time authorization code and a random state pass briefly through the Noir sign-in redirect. Only your device holds the verifier needed to redeem the code. Disconnect in Noir and use OpenRouter key settings to revoke the credential at the provider.
+
+Attachments stay in the local chat library. Cloud chat shows the file names and extracted text before sending. Sending image previews or supported Gemini media is optional for each message. Reply audio and video cards are rendered on this PC. Files remain in backups you make.
+
+Trusted device sync is optional. Approving full sync sends saved chat history, chat files, editable project files and connected direct API keys to your selected iPhone over an end-to-end encrypted session. The relay forwards packets while both devices are reachable. Offline changes are stored on your devices. Cloud provider calls still send the content you approve to that provider. The iPhone keeps imported API keys in its device-only Keychain. To invalidate a key already copied to a phone, revoke it with the provider.

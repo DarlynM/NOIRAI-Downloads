@@ -1,51 +1,30 @@
 # The receiving desk
 
-Can a local AI catch a short shipment when another item has a surplus? Try it on a Windows x64 PC in about ten minutes after setup. Two fictional delivery slips and a hand count give you an independent answer.
+Two deliveries arrived against one order. Three blue washers are missing and a box has one extra red cap. Run the calculation on your own PC, add a washer, and watch the counts change. The calculation works without a model download, API key or provider charge.
 
-**[Download Noir for Windows](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.12.1)** · **[Print the two-page worksheet](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.12.1/Noir-receiving-desk-pilot.pdf)**
+**[Download Noir for Windows](https://github.com/DarlynM/NOIRAI-Downloads/releases/latest)** · **[Download the sample project](https://raw.githubusercontent.com/DarlynM/NOIRAI-Downloads/main/receiving-desk/Noir-receiving-desk.zip)** · **[Print the worksheet](https://raw.githubusercontent.com/DarlynM/NOIRAI-Downloads/main/receiving-desk/Noir-receiving-desk.pdf)**
 
-## Run the test
+## Use the sample project in Noir
 
-1. From the release, download `NOIRAI-1.12.1-Setup.exe`. The installer is unsigned. The release provides its SHA-256 checksum. Use a PC where your normal software policy permits installation.
-2. Open **NOIRAI** from the desktop shortcut. In the model picker, download a local model that fits the PC. Internet is needed for initial setup and the model download. This exercise runs locally with no provider account or API key.
-3. Start a new chat with that local model and paste the prompt below. If you try a second model, use a fresh chat and the same prompt.
+1. Install Noir on Windows x64 and open **NOIRAI**. Setup needs internet to fetch the runtimes. The current installer is unsigned. Windows publisher signing is one of NoirGen's funding goals.
+2. Download the sample project. In File Explorer, choose **Extract All**. In Noir, choose **Open project** by the Projects heading and select the extracted folder containing `receiving.csv` and `reconcile.py`.
+3. Open **Activity** at the bottom of the project chat. Choose **python** as the command runtime, enter `reconcile.py` under command arguments, and select **Run**. The totals should be **3 missing, 1 extra**.
+4. Enter `reconcile.py --receive "Blue washers" 1` and select **Run** again. Blue washers now show 28 received. The totals should be **2 missing, 1 extra**. An extra delivery applies to that run only.
 
-```text
-Order J17, in pieces. Each line gives ordered, slip A, slip B.
-Blue washers: 30, 18, 9
-Green tape: 12, 7, 5
-Red caps: 9, 6, 4
+To use different quantities, edit and save the CSV in the project and run the calculation again. Each row has a unique item name and three whole numbers. The calculator adds the two deliveries, compares the result with that item's order, and totals shortages and extras separately.
 
-Reconcile each item. Show received totals and variance against the order.
-Report total pieces missing and total extras separately.
-What should the receiving lead recount first?
-```
+| Item | Ordered | Slip A | Slip B | Received | Difference |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Blue washers | 30 | 18 | 9 | 27 | 3 short |
+| Green tape | 12 | 7 | 5 | 12 | Exact |
+| Red caps | 9 | 6 | 4 | 10 | 1 extra |
 
-Then send this in the same chat:
+## Try a model explanation
 
-```text
-One more blue washer arrives. Update the affected row. How many pieces are missing and how many are extra now?
-```
+Once you have the counts, paste the calculated output into a local Noir chat and ask "Which bins need a recount, and what should the shift lead check first?" Compare the explanation with the rows above. If you switch to a cloud provider, review the text and history in the sharing preview before sending.
 
-<details>
-<summary><strong>Check the hand count</strong></summary>
+## Share your experience or support Noir
 
-| Item | Ordered | Received | Difference |
-| --- | ---: | ---: | ---: |
-| Blue washers | 30 | 27 | 3 short |
-| Green tape | 12 | 12 | 0 |
-| Red caps | 9 | 10 | 1 extra |
+Tell NoirGen which Windows PC you tried, the two totals you saw, and anything that slowed you down. Use fictional data in public feedback. For a partnership, investment conversation or team evaluation, contact NoirGen directly.
 
-The first delivery totals are 51 ordered and 49 received. Recount the washers and caps. A net difference of two hides the individual discrepancies. After one washer arrives, 50 pieces have arrived in total, with two washers missing and one cap extra.
-
-</details>
-
-## Tell us how it went
-
-Reply to the person who invited you or [email NoirGen’s pilot mailbox](mailto:social@noirgen.com?subject=Noir%20Windows%20pilot%20result). If you use GitHub, you can also [report a pilot result or setup blocker publicly](https://github.com/DarlynM/NOIRAI-Downloads/issues/new?template=windows-pilot.yml). One line is enough. Choose whichever describes your experience:
-
-- **Ran it** — Windows PC or GPU, model name, missing/extra counts on each turn, and the first thing that slowed you down.
-- **Stopped during setup** — the step you reached and what you saw.
-- **Interested in testing with your team** — the type of workflow you want to try.
-
-The results people volunteer help us choose fixes. A model can give a wrong answer. Fictional quantities are all we need for this exercise.
+[Report a result](https://github.com/DarlynM/NOIRAI-Downloads/issues/new?template=windows-pilot.yml) · [Contact NoirGen](mailto:social@noirgen.com) · [Support Windows signing and development](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone)

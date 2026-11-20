@@ -9,7 +9,7 @@ body:
     id: version
     attributes:
       label: NOIR version and Windows version
-      placeholder: "NOIR 1.6.0; Windows 11"
+      placeholder: "Noir version from Settings, Windows version"
     validations:
       required: true
   - type: input

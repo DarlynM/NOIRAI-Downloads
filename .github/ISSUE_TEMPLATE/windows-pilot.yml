@@ -5,15 +5,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        This report is public. Use the [fictional receiving exercise](https://github.com/DarlynM/NOIRAI-Downloads/blob/main/Windows-Pilot.md). For a private reply, email social@noirgen.com. The model name, counts or setup step are enough.
+        This report is public. Use the [fictional receiving exercise](https://github.com/DarlynM/NOIRAI-Downloads/blob/main/Windows-Pilot.md). For a private reply, email social@noirgen.com. The app version, counts or setup step are enough.
   - type: dropdown
     id: outcome
     attributes:
       label: How far did you get?
       options:
         - I have not run it yet
-        - Ran both prompts
-        - Ran the first prompt
+        - Checked both deliveries
+        - Checked the first delivery
         - Stopped during setup
         - Interested in trying this with a team
     validations:
@@ -21,14 +21,14 @@ body:
   - type: input
     id: setup
     attributes:
-      label: Model and test PC, if available
-      placeholder: "Local model name, RAM and optional GPU model"
+      label: Noir version and test PC, if available
+      placeholder: "Noir version, RAM and optional GPU model"
   - type: textarea
     id: observation
     attributes:
       label: What happened?
-      description: Share the missing and extra counts for each turn, the setup step that stopped you, or the workflow your team wants to try.
-      placeholder: "First turn ... Second turn ... Or I stopped at ..."
+      description: Share the missing and extra counts before and after the extra washer, the setup step that stopped you, or the workflow your team wants to try.
+      placeholder: "First delivery ... Corrected delivery ... Or I stopped at ..."
     validations:
       required: true
   - type: textarea

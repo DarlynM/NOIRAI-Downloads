@@ -1,0 +1,42 @@
+{
+  "version": "1.9.5",
+  "date": "2026-11-18",
+  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.9.5",
+  "installer": {
+    "bytes": 94361088,
+    "sha256": "829c4e2afeb6331e79da622669adb39ae12722e1f7896deee3ac2022e04c5d54",
+    "appSha256": "556b99bd9695599656ca482af635ff830103d16b0eba9467725b4691ed32babf",
+    "authenticode": "unsigned",
+    "updateReceipt": "Ed25519 signature and installer bytes checked by the app verification function"
+  },
+  "cleanWindowsQualification": {
+    "status": "PASS",
+    "run": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44389033213",
+    "checksByHost": {
+      "windows-2022": 20,
+      "windows-2025": 23
+    },
+    "freshFilesVerified": 2140,
+    "freshRuntimeArchives": 5,
+    "freshRuntimeArchiveBytes": 920831610
+  },
+  "regression": {
+    "desktopCore": 39,
+    "cloudAndMedia": 12,
+    "companionBackendAndTransport": 42,
+    "providerPickerAndPricing": 9,
+    "installedAppAndLiveRelay": 10,
+    "nativeSignInSyntheticCases": 5,
+    "liveNegativeProviderChecks": 5
+  },
+  "optionalProviders": {
+    "positiveStreaming": "Synthetic provider responses",
+    "realInvalidCredentials": "Rejection verified by all five providers",
+    "providerBilledGeneration": "Not run"
+  },
+  "iphone": {
+    "version": "1.9.5",
+    "nativeQualification": "Pending",
+    "published": false
+  }
+}
