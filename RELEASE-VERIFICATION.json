@@ -51,8 +51,8 @@
   "hostedWindows": {
     "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44835553577",
     "jobs": [
-      "Windows Server 2022 running",
-      "Windows Server 2025 running"
+      "Windows Server 2022: failed second model arithmetic assertion",
+      "Windows Server 2025: failed second model arithmetic assertion"
     ]
   },
   "flows": {

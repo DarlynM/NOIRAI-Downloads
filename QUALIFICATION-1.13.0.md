@@ -16,4 +16,6 @@ The official installer is 94,450,176 bytes. An anonymous download started with a
 
 The cloud stream checks used fixtures. The pairing check used a software phone peer. Consumer hardware performance, physical iPhone Wi-Fi-to-cellular handoff and foreground activity timing require separate device measurements.
 
+Both hosted runners passed installation, the tool directory, and agent edit/command checks. Both stopped on the smallest model’s arithmetic output assertion when switching models.
+
 [Windows hosted checks](https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44835553577) · [Installer and signed update receipt](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.13.0) · [Machine-readable results](RELEASE-VERIFICATION.json)
