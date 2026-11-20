@@ -14,6 +14,9 @@ module.exports = async function ({call,check,evaluate,until}) {
       await call('pluginEnable',{id:plugin.id,enabled:false});
       await assert.rejects(()=>call('toolPrepare',{action:args}));
     } finally { await call('pluginRemove',{id:plugin.id}); }
-    await until(async()=>await evaluate("Array.from(document.querySelectorAll('button')).some(b=>/run log/i.test(b.getAttribute('aria-label')||''))"),15000);
+    await evaluate("Array.from(document.querySelectorAll('button')).find(b=>(b.title || b.textContent.trim())==='Tools')?.click()");
+    await until(async()=>await evaluate("!!document.querySelector('input[aria-label=\"Search tools and plugins\"]')"),15000);
+    assert.match(await evaluate("document.querySelector('[role=dialog]').innerText"), /World Clock/);
+    await evaluate("document.querySelector('button[aria-label=\"Close tools\"]').click()");
   });
 };
