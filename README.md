@@ -2,15 +2,15 @@
 
 Free local AI for Windows, by NoirGen LLC.
 
-## Windows 1.12.1
+## Windows 1.12.2
 
-[Try the receiving desk](Windows-Pilot.md) to reconcile two deliveries locally, then use a model to explain which items need a recount. The sample calculation runs without a model or an API account.
+[Try the receiving desk](Windows-Pilot.md) to reconcile two deliveries locally, then use a model to explain which items need a recount. Open **Receiving desk** in the sidebar. Edit the order, add a delivery and copy the result before downloading any model.
 
 [Help fund Windows publisher signing and device testing](https://www.gofundme.com/f/help-build-noir-free-local-ai-for-everyone) or [contact NoirGen about partnerships and investment](mailto:social@noirgen.com?subject=Noir%20partnership%20inquiry).
 
 Download Noir for Windows x64. Run a local model on your PC or connect your own provider API key. Review which messages go to a cloud provider before sending. Provider charges depend on your account.
 
-[Download Windows 1.12.1](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.12.1/NOIRAI-1.12.1-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.12.1) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.12.1/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.12.1.md)
+[Download Windows 1.12.2](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.12.2/NOIRAI-1.12.2-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.12.2) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.12.2/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.12.2.md)
 
 The download has been verified from an empty installation. The Windows installer is unsigned. On iPhone, 1.12.1 build 20004 is available to internal TestFlight testers. The App Store submission is set to release automatically when Apple approves it.
 

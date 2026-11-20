@@ -1,5 +1,13 @@
 # Noir for Windows
 
+## Windows 1.12.2
+
+Open **Receiving desk** in the sidebar to reconcile two deliveries. Rename items, edit the quantities, add or remove rows, and copy a calculated result. The worksheet saves your edits on this PC. It works before your first model download. In local Chat, Noir can also calculate a structured receiving request and update a previously calculated shipment.
+
+The Windows package now ships current version information and instructions. The phone privacy notice explains both pairing choices. Windows publisher signing and broader device testing are funding goals. iPhone and iPad 1.12.1 (20004) remain on their own Apple release schedule.
+
+[Download and checksum](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.12.2) · [Release checks](QUALIFICATION-1.12.2.md) · [Receiving desk](Windows-Pilot.md)
+
 ## 1.12.1
 
 The Windows release improves responsiveness in long chats, supports switching between local and connected cloud models, and adds elapsed time and run activity for paired devices. The Windows package is unsigned. The separate iOS companion 1.12.1 build 20004 entered internal TestFlight and App Review.

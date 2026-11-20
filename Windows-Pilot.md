@@ -4,7 +4,15 @@ Two deliveries arrived against one order. Three blue washers are missing and a b
 
 **[Download Noir for Windows](https://github.com/DarlynM/NOIRAI-Downloads/releases/latest)** · **[Download the sample project](https://raw.githubusercontent.com/DarlynM/NOIRAI-Downloads/main/receiving-desk/Noir-receiving-desk.zip)** · **[Print the worksheet](https://raw.githubusercontent.com/DarlynM/NOIRAI-Downloads/main/receiving-desk/Noir-receiving-desk.pdf)**
 
-## Use the sample project in Noir
+## Open the Windows worksheet
+
+1. Install Noir 1.12.2 on Windows x64. Open **NOIRAI** and select **Receiving desk** in the sidebar.
+2. The sample order shows **3 missing, 1 extra**. Select **Add one blue washer**. The count becomes **2 missing, 1 extra**.
+3. Try a shipment of your own. Change the item names or either slip, or choose **Add item**. Select **Copy result** for the item-by-item tally and recount list. Your worksheet stays on this PC when you close it.
+
+## Use the downloadable Python project
+
+This route also works on Noir 1.12.1.
 
 1. Install Noir on Windows x64 and open **NOIRAI**. Setup needs internet to fetch the runtimes. The current installer is unsigned. Windows publisher signing is one of NoirGen's funding goals.
 2. Download the sample project. In File Explorer, choose **Extract All**. In Noir, choose **Open project** by the Projects heading and select the extracted folder containing `receiving.csv` and `reconcile.py`.

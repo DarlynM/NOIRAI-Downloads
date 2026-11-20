@@ -1,0 +1,59 @@
+{
+  "version": "1.12.1",
+  "date": "2026-11-20",
+  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.12.1",
+  "installer": {
+    "sha256": "e15dbd95b6f864f107925744d91953552069195b4f5fc7d9cd08924e62b73fdb",
+    "bytes": 94423040,
+    "authenticode": "unsigned",
+    "ed25519ReceiptVerified": true,
+    "filesVerified": 2144
+  },
+  "regressions": {
+    "desktopCore": {
+      "tests": 61,
+      "pass": 61,
+      "fail": 0,
+      "skipped": 0
+    },
+    "desktopFeatures": {
+      "tests": 130,
+      "pass": 130,
+      "fail": 0
+    },
+    "cloudIntegrationFixtures": {
+      "tests": 14,
+      "pass": 14,
+      "fail": 0,
+      "skipped": 0
+    },
+    "companionTransport": {
+      "tests": 45,
+      "pass": 45,
+      "fail": 0,
+      "skipped": 0
+    }
+  },
+  "firstUse": {
+    "platform": "Windows 10 x64",
+    "model": "Qwen 3 0.6B, CPU",
+    "chatSurvivedRestart": true
+  },
+  "receivingDesk": {
+    "providerKeyRequired": false,
+    "protectedPythonTestPassed": true,
+    "resultBefore": [
+      3,
+      1
+    ],
+    "resultAfter": [
+      2,
+      1
+    ],
+    "values": [
+      "missing",
+      "extra"
+    ]
+  },
+  "details": "QUALIFICATION-1.12.1.md"
+}

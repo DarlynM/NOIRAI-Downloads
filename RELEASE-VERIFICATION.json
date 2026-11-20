@@ -1,59 +1,109 @@
 {
-  "version": "1.12.1",
-  "date": "2026-11-20",
-  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.12.1",
+  "version": "1.12.2",
+  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.12.2",
   "installer": {
-    "sha256": "e15dbd95b6f864f107925744d91953552069195b4f5fc7d9cd08924e62b73fdb",
-    "bytes": 94423040,
+    "sha256": "3819e013d1c8ee15183c88ccd910738afc59099d8beacbe9fbec2b2a5ecf7d22",
+    "bytes": 94427648,
     "authenticode": "unsigned",
     "ed25519ReceiptVerified": true,
-    "filesVerified": 2144
+    "filesVerified": 2144,
+    "emptyCache": true,
+    "runtimeArchivesVerified": [
+      "Electron",
+      "Node",
+      "Python",
+      "llama.cpp",
+      "CUDA"
+    ],
+    "optionalGit": "2.56.1.windows.1",
+    "appAsarSha256": "4715e347160cd8e5670963234682a2abbf5290dc7c26e5faf88eade349f3e86a"
   },
-  "regressions": {
-    "desktopCore": {
-      "tests": 61,
-      "pass": 61,
-      "fail": 0,
-      "skipped": 0
-    },
-    "desktopFeatures": {
-      "tests": 130,
-      "pass": 130,
-      "fail": 0
-    },
-    "cloudIntegrationFixtures": {
-      "tests": 14,
-      "pass": 14,
-      "fail": 0,
-      "skipped": 0
-    },
-    "companionTransport": {
-      "tests": 45,
-      "pass": 45,
-      "fail": 0,
-      "skipped": 0
-    }
-  },
+  "verifiedAssets": [
+    "NOIRAI-1.12.2-Setup.exe",
+    "NOIRAI-1.12.2-update.json",
+    "Noir-Quick-Start.md",
+    "Noir-receiving-desk-pilot.pdf",
+    "Noir-receiving-desk.zip",
+    "SHA256SUMS.txt"
+  ],
+  "installSeconds": 130.6,
+  "utc": "2026-11-20T22:37:30.197923+00:00",
   "firstUse": {
-    "platform": "Windows 10 x64",
-    "model": "Qwen 3 0.6B, CPU",
-    "chatSurvivedRestart": true
+    "platform": "Windows 10 Home x64",
+    "cpu": "Intel i7-12700KF",
+    "cudaCards": [
+      "RTX 3060 12 GB",
+      "RTX 3060 12 GB"
+    ],
+    "ordinaryChat": {
+      "promptsPerModel": 4,
+      "cpuPrompts": 2,
+      "cudaPrompts": 2,
+      "correctReplies": {
+        "Huihui Qwen 4B": 4,
+        "Qwen 3 0.6B": 3
+      },
+      "savedRepliesAfterRestart": 8
+    },
+    "physicalCpuOnlyLaptopTested": false
   },
   "receivingDesk": {
-    "providerKeyRequired": false,
-    "protectedPythonTestPassed": true,
-    "resultBefore": [
-      3,
-      1
-    ],
-    "resultAfter": [
-      2,
-      1
-    ],
-    "values": [
+    "modelOrKeyNeededForWorksheet": false,
+    "worksheetSavedAcrossRestart": true,
+    "counts": [
       "missing",
       "extra"
-    ]
+    ],
+    "publishedOrder": [
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "differentOrder": [
+      [
+        19,
+        14
+      ],
+      [
+        19,
+        17
+      ]
+    ],
+    "reorderedColumns": [
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        6
+      ]
+    ],
+    "localChatChecked": true
   },
-  "details": "QUALIFICATION-1.12.1.md"
+  "companion": {
+    "version": "1.12.1",
+    "build": 20004,
+    "appleStatus": "WAITING_FOR_REVIEW",
+    "releaseSetting": "AFTER_APPROVAL",
+    "queueDescriptionVerified": true,
+    "phonePeer": "software phone over hosted encrypted relay",
+    "tests": [
+      "Packaged desktop paired through the visible QR and trust controls over the live encrypted relay",
+      "Synthetic phone received the desktop project and its first file",
+      "Both sides caught up after the packaged PC restarted; replay of the phone edit was idempotent",
+      "An actual concurrent edit retained both alternatives until explicit resolution",
+      "Two original attachments crossed the encrypted connection in opposite directions; both byte sequences matched",
+      "Both originals appeared in the packaged desktop Chat files menu",
+      "Revoking the synthetic phone removed its session"
+    ],
+    "currentPhysicalDeviceHandoffAndTimerVerified": false
+  },
+  "hostedInstallationRun": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44830136933",
+  "details": "QUALIFICATION-1.12.2.md"
 }
