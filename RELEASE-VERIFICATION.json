@@ -229,5 +229,18 @@
     ],
     "desktopChecksPassed": 237,
     "companionTransportChecksPassed": 45
+  },
+  "hostedWindows": {
+    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44830136933",
+    "jobs": [
+      {
+        "name": "fresh-install (windows-2025)",
+        "conclusion": "success"
+      },
+      {
+        "name": "fresh-install (windows-2022)",
+        "conclusion": "success"
+      }
+    ]
   }
 }

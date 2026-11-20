@@ -23,6 +23,10 @@ These are observed answers to four specific prompts per model. A CPU-only consum
 
 237 checks passed across 16 desktop suites. They covered the task queue, chat and model switching, protected commands, recovery, reviewed edits, updater verification and cloud-provider fixtures. Another 45 companion transport checks passed.
 
+## Independent hosted Windows tests
+
+Fresh Windows Server 2022 and 2025 machines downloaded the public installer and all five runtimes. Both jobs passed the editable worksheet, clipboard, real CPU chat, protected tools, model switching, code review, and restart checks. The 2025 job also downloaded the image runtime and model and generated a 512-by-512 PNG on CPU. The job logs show each check.
+
 ## Updating from 1.12.1
 
 A disposable installation passed low-space rejection, recovery after an interrupted update, upgrade to 1.12.2 and rollback to 1.12.1. All 2,144 files matched the expected manifest after each operation. Synthetic chat, model and project files survived throughout.
