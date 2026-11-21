@@ -10,7 +10,9 @@ The packaged UI created and edited a nested file, found numeric text in its cont
 
 In the final executable the local 27B model ran the four packing-helper tests and reported what happens at zero carton capacity. Both the generated suite and an independent edge-case suite passed in the protected runner after reopening the project. The new workspace showed the same chat once, with the successful assistant outcome intact after an independently failed manual test.
 
-The installer passed an upgrade from 1.14.0, low-space handling, interrupted update recovery and rollback while preserving synthetic user data. Hosted Windows results are Windows 2025 (in_progress), Windows 2022 (in_progress). [Fresh Windows runs](https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44842758445)
+The installer passed an upgrade from 1.14.0, low-space handling, interrupted update recovery and rollback while preserving synthetic user data. Hosted Windows results are Windows 2025 (success), Windows 2022 (success). [Fresh Windows runs](https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44842758445)
+
+Both fresh Windows machines downloaded and switched real local models, ran protected Node and Python commands, and exercised chat recovery and MCP. The Windows 2025 run also downloaded a fresh image runtime and generated a decoded 512 by 512 PNG on CPU.
 
 The preceding [1.14.0 project and connected-app tests](QUALIFICATION-1.14.0.md) cover a local 27B model building a packing helper, the review and test of a follow-up change, public GitHub searches, private transport fixtures and alternate reply models. [Current release verification](RELEASE-VERIFICATION.json)
 

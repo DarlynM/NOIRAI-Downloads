@@ -53,11 +53,11 @@
   },
   "hostedWindows": {
     "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44842758445",
-    "status": "in_progress",
-    "conclusion": "",
+    "status": "completed",
+    "conclusion": "success",
     "jobs": {
-      "fresh-install (windows-2025)": "in_progress",
-      "fresh-install (windows-2022)": "in_progress"
+      "fresh-install (windows-2025)": "success",
+      "fresh-install (windows-2022)": "success"
     }
   },
   "projectInspector": [
@@ -89,11 +89,11 @@
   "hostedWindowsOriginal": {
     "run": {
       "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44841467585",
-      "status": "in_progress",
-      "conclusion": "",
+      "status": "completed",
+      "conclusion": "failure",
       "jobs": {
         "fresh-install (windows-2022)": "failure",
-        "fresh-install (windows-2025)": "in_progress"
+        "fresh-install (windows-2025)": "failure"
       }
     },
     "note": "The initial exact-copy assertion expected BLUE to an instruction ending in BLUE. The tiny local model included the adjacent period. The full repeat supplies three delimited targets and retains independent exact comparisons. See qualification."
