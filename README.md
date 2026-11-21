@@ -18,7 +18,7 @@ Download Noir for Windows x64. Run a local model on your PC or connect your own 
 
 [Download Windows 1.14.1](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.1/NOIRAI-1.14.1-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.1) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.1/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.14.1.md)
 
-The download has been verified from an empty installation. The Windows installer is unsigned. On iPhone and iPad, internal testers have access to 1.13.0 build 20005. Apple is reviewing external beta access. The separate 1.12.1 App Store submission is set to release automatically upon approval.
+The download has been verified from an empty installation. The Windows installer is unsigned. On iPhone and iPad, internal testers have access to version 1.14.0 build 20006. Public beta enrollment is awaiting Apple approval. [Mobile release checks](MOBILE-1.14.0.md). The separate 1.12.1 App Store submission is set to release automatically upon approval.
 
 This repository contains release documentation, public distribution metrics, feedback forms and official Windows installer downloads. NOIR is proprietary freeware; its development source is private.
 
