@@ -1,15 +1,15 @@
 {
-  "version": "1.14.0",
-  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.0",
+  "version": "1.14.1",
+  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.1",
   "installer": {
-    "version": "1.14.0",
+    "version": "1.14.1",
     "anonymousPublicDownload": true,
     "files": 2144,
-    "bytes": 94473728,
-    "sha256": "f2248f3507665400f830350f70fdb7107766156eade1770407ac373762d14ecf",
-    "appSha256": "d1d60d180cca47c0a79aeb73115a6a9e57b0ea9bd6f6596cdb016a45d1b21a0d",
+    "bytes": 94474752,
+    "sha256": "31d19e2e32e184ae2679792fe33107bf711939842ab0a55f9510c1559e216b6a",
+    "appSha256": "930f6c75f2c6a227c2ecc6227bc91faf962461484f137823cb47f3d502fe4667",
     "ed25519Verified": true,
-    "installerSeconds": 138.2,
+    "installerSeconds": 196.6,
     "emptyCache": true,
     "runtimeArchives": [
       "Electron",
@@ -18,77 +18,70 @@
       "llama.cpp",
       "CUDA"
     ],
-    "utc": "2026-11-20T23:57:18.834338+00:00"
+    "utc": "2026-11-21T00:09:07.842757+00:00"
   },
-  "authenticode": "unsigned",
   "assets": [
-    "NOIRAI-1.14.0-Setup.exe",
-    "NOIRAI-1.14.0-update.json",
+    "NOIRAI-1.14.1-Setup.exe",
+    "NOIRAI-1.14.1-update.json",
     "SHA256SUMS.txt",
     "Noir-Quick-Start.md",
     "Noir-receiving-desk-pilot.pdf",
     "Noir-receiving-desk.zip"
   ],
-  "regression": {
-    "windows": 261,
-    "suites": 16,
-    "skipped": 0
-  },
+  "authenticode": "unsigned",
   "installerLifecycle": {
     "low-space": {
       "filesVerified": 2144,
       "syntheticDataMarkers": 3,
-      "seconds": 1.88
+      "seconds": 1.89
     },
     "interrupted": {
       "filesVerified": 2144,
       "syntheticDataMarkers": 3,
-      "seconds": 8.22
+      "seconds": 8.28
     },
     "upgrade": {
       "filesVerified": 2144,
       "syntheticDataMarkers": 3,
-      "seconds": 34.27
+      "seconds": 33.27
     },
     "rollback": {
       "filesVerified": 2144,
       "syntheticDataMarkers": 3,
-      "seconds": 3.06
+      "seconds": 2.94
     }
   },
   "hostedWindows": {
-    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44840139387",
+    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44841467585",
     "jobs": [
       "Windows 2022 (running)",
       "Windows 2025 (running)"
     ]
   },
-  "publicGitHub": {
-    "actualProvider": true,
-    "repository": "DarlynM/NOIRAI-Downloads",
-    "returnedIssues": 7,
-    "authorizationHeaderSent": false
+  "projectInspector": [
+    "Empty workspace hides unavailable actions, keyboard tabs work, project created through Files",
+    "Created nested file, edited with Monaco, saved, searched content and toggled attachment",
+    "Changes history opened the actual applied edit and diff",
+    "Created and corrected a durable project note and saved the project summary",
+    "Tasks queued a planner from the UI, retained its project and recorded cancellation",
+    "Reopened the application and independently verified file bytes, memory, project configuration and task history"
+  ],
+  "previousReleaseEvidence": "qualification/verification-1.14.0.json",
+  "regression": {
+    "windows": 263,
+    "suites": 16,
+    "skipped": 0
   },
-  "providerAccountTests": "Scoped authenticated transport and error tests with fixtures. Public GitHub exercised live. See release notes for additional account results.",
-  "phone": "The final Windows code paired through the real relay with current and older synthetic phone peers and verified catalog visibility, files, reconnect, conflict and revocation.",
-  "projectWorkspace": {
-    "uiChecks": [
-      "Empty workspace hides unavailable actions, keyboard tabs work, project created through Files",
-      "Created nested file, edited with Monaco, saved, searched content and toggled attachment",
-      "Changes history opened the actual applied edit and diff",
-      "Created and corrected a durable project note and saved the project summary",
-      "Tasks queued a planner from the UI, retained its project and recorded cancellation",
-      "Reopened the application and independently verified file bytes, memory, project configuration and task history"
-    ],
-    "actualLocalModel": "Qwen3.8 27B \u2014 Huihui Abliterated",
-    "restartChecks": {
-      "project": true,
-      "chats": 2,
-      "originalTaskIds": 2,
-      "memory": true,
-      "literalSearch": true,
-      "isolated": true
-    },
-    "protectedSuitesPassedAfterRestart": 2
+  "pairedWindowsFinal": true,
+  "liveProject": {
+    "model": "Qwen 27B (Huihui, local)",
+    "testsPassed": 4,
+    "independentProtectedTestsPassed": true,
+    "projectReopened": true,
+    "confirmedNavigationAndRecovery": {
+      "textSelectionClearedBeforeBothCaptures": true,
+      "manualFailExcludedFromConversationStatus": true,
+      "activeChatNavigationEntries": 1
+    }
   }
 }

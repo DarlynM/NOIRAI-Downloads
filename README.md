@@ -2,7 +2,7 @@
 
 Free local AI for Windows, by NoirGen LLC.
 
-## Windows 1.14.0
+## Windows 1.14.1
 
 Open **Tools** in the composer. Connect Gmail, Google Drive, Google Calendar, Slack or GitHub to search and read with the access you choose. Select public GitHub to search repositories without an account. For an offline calculation, add Calculator and enter `(24 + 6) / 3`.
 
@@ -16,7 +16,7 @@ Keep local and connected cloud replies in the same chat or project. Choose the m
 
 Download Noir for Windows x64. Run a local model on your PC or connect your own provider API key. Review which messages go to a cloud provider before sending. Provider charges depend on your account.
 
-[Download Windows 1.14.0](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.0/NOIRAI-1.14.0-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.0) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.0/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.14.0.md)
+[Download Windows 1.14.1](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.1/NOIRAI-1.14.1-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.1) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.1/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.14.1.md)
 
 The download has been verified from an empty installation. The Windows installer is unsigned. On iPhone and iPad, internal testers have access to 1.13.0 build 20005. Apple is reviewing external beta access. The separate 1.12.1 App Store submission is set to release automatically upon approval.
 

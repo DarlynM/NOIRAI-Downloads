@@ -1,5 +1,11 @@
 # Noir for Windows
 
+## Windows 1.14.1
+
+Expanded projects show their chats once. Project search, archived conversations and collapsed project entries remain accessible. Manual commands and their exit results appear in the run log. Continue is available for assistant runs with saved progress.
+
+[Download Windows 1.14.1](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.1) · [Release checks](QUALIFICATION-1.14.1.md)
+
 ## Windows 1.14.0
 
 A single model picker and Tools directory live in the chat composer. In the project panel, a file search opens the matching line, Changes lists pending and applied edits, Tasks tracks project runs, and Memory supports creating and editing notes.
