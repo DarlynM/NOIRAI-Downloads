@@ -17,6 +17,7 @@ async function main(){
  if(Number(version.split('.')[1])>=10)await require('./clipboard.cjs')({cdp,evaluate,check,until});
  if(process.env.NOIR_CLIPBOARD_ONLY==='true'){await stop();fs.writeFileSync(path.join(root,'qualification.json'),JSON.stringify({version,passed:true,scope:'Native Windows clipboard and fresh install',checks},null,2));return;}
  const [major, minor, patch] = version.split('.').map(Number);
+ if (major > 1 || (major === 1 && minor >= 15)) await require('./first-model-115.cjs')({call,check,evaluate,until});
  if (major > 1 || (major === 1 && (minor > 12 || (minor === 12 && patch >= 2)))) await require('./receiving-desk.cjs')({evaluate,until,check});
  if (major > 1 || (major === 1 && minor >= 13)) await require('./workspace-113.cjs')({call,check,evaluate,until});
  if (major > 1 || (major === 1 && minor >= 14)) await require('./workspace-114.cjs')({call,check});

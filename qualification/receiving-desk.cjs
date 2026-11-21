@@ -9,7 +9,7 @@ module.exports = async function ({ evaluate, until, check }) {
   })()`);
   const dialogText = () => evaluate("document.querySelector('[role=dialog]')?.innerText || ''");
 
-  await check('Receiving desk works before a model is installed and recalculates an edited row', async () => {
+  await check('Receiving desk records another delivery and recalculates an edited row', async () => {
     await click('Receiving desk');
     await until(async () => /3 missing\s*·\s*1 extra/.test(await dialogText()), 15000);
     await click('Add one blue washer');
