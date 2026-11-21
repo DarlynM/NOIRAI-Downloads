@@ -15,7 +15,16 @@ module.exports=async({call,check,until})=>{
   await check('A real local model requests an MCP call and waits for user approval',async()=>{
    const before=calls,project=await call('newProject',{name:'SYNTHETIC_PLUGIN_AGENT'}),chat=await call('newChat',{project});
    await call('send',{chat,prompt:'Use the connected Synthetic calculator plugin to add 19 and 23. Discover its tools if necessary. Call its add tool with a=19 and b=23. Do not write or run code. After the plugin result, report the answer and finish.',mode:'Agent',permissions:{edits:false,commands:false}});
-   const approval=await until(async()=>{const s=await call('state'),a=s.approvals.find(a=>a.chat===chat&&a.status==='pending');if(!s.busy&&s.tasks.some(t=>t.chat===chat&&['failed','limited','complete'].includes(t.status))&&!a)throw Error('Model ended without requesting the plugin approval');return a;},300000);
+   const approval=await until(async()=>{
+    const state=await call('state');
+    const pending=state.approvals.find(a=>a.chat===chat&&a.status==='pending');
+    const task=state.tasks.find(t=>t.chat===chat&&['failed','limited','complete'].includes(t.status));
+    if(!pending&&!state.busy&&task){
+     const reply=(await call('messages',{chat})).filter(m=>m.role==='assistant').at(-1)?.content;
+     throw Error('Synthetic calculator finished without requesting approval. Task '+task.status+'. Reply: '+String(reply||task.error||'No reply').slice(0,600));
+    }
+    return pending;
+   },300000);
    assert.equal(calls,before);await call('approveCommand',{id:approval.id,decision:'once'});
    await until(async()=>{const s=await call('state'),task=s.tasks.find(t=>t.chat===chat);if(s.approvals.some(a=>a.chat===chat&&a.status==='pending'))throw Error('Model requested another approval after the plugin result');if(!s.busy&&task&&['failed','limited','cancelled'].includes(task.status))throw Error('Plugin continuation ended '+task.status+': '+task.error);return !s.busy&&task?.status==='complete';},300000);
    assert.equal(calls,before+1);assert.ok((await call('messages',{chat})).some(m=>m.role==='assistant'&&/42/.test(m.content)));
