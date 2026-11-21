@@ -1,5 +1,13 @@
 # Noir for Windows
 
+## Windows 1.15.2
+
+Select **Download and start chatting** on your first launch. Noir recommends a model for the available hardware and disk space, shows its size, downloads and verifies it, and starts it for your first chat. **Try Receiving desk** lets you reconcile a shipment during the download. **Browse models** opens the catalog.
+
+When you ask Agent to use an enabled plugin by name, it looks up the available operations and asks before running one. The Google connection screen explains how to recover when Google blocks a request, including when the permission requires Noir to complete Google's verification.
+
+[Windows download](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.15.2) · [Release checks](QUALIFICATION-1.15.2.md)
+
 ## Windows 1.14.1
 
 Expanded projects show their chats once. Project search, archived conversations and collapsed project entries remain accessible. Manual commands and their exit results appear in the run log. Continue is available for assistant runs with saved progress.

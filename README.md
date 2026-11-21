@@ -2,11 +2,15 @@
 
 Free local AI for Windows, by NoirGen LLC.
 
-## Windows 1.14.1
+## Windows 1.15.2
+
+Open **NOIRAI** on a fresh Windows installation. It checks your available memory and disk space, recommends a local model and shows the download size. Select **Download and start chatting** to download, verify and start it. Open **Try Receiving desk** to edit a real worksheet while the model downloads, or **Browse models** to choose another.
 
 Open **Tools** in the composer. Connect Gmail, Google Drive, Google Calendar, Slack or GitHub to search and read with the access you choose. Select public GitHub to search repositories without an account. For an offline calculation, add Calculator and enter `(24 + 6) / 3`.
 
 Use the project panel to edit and search files, inspect changes, track tasks and save memory for later chats.
+
+In the live Google Drive test, Google blocked managed sign-in before the test account reached consent. A private file search still needs verification. [Windows release checks](QUALIFICATION-1.15.2.md)
 
 Keep local and connected cloud replies in the same chat or project. Choose the model beside the composer and review the text you share. Use **Chat history** to jump to an earlier message and **Run log** to inspect recorded actions. When a model asks for a decision, choose an answer or write your own.
 
@@ -16,7 +20,7 @@ Keep local and connected cloud replies in the same chat or project. Choose the m
 
 Download Noir for Windows x64. Run a local model on your PC or connect your own provider API key. Review which messages go to a cloud provider before sending. Provider charges depend on your account.
 
-[Download Windows 1.14.1](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.1/NOIRAI-1.14.1-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.1) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.14.1/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.14.1.md)
+[Download Windows 1.15.2](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.15.2/NOIRAI-1.15.2-Setup.exe) · [Release notes and SHA-256](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.15.2) · [Quick start](https://github.com/DarlynM/NOIRAI-Downloads/releases/download/v1.15.2/Noir-Quick-Start.md) · [Release checks](QUALIFICATION-1.15.2.md)
 
 The download has been verified from an empty installation. The Windows installer is unsigned. On iPhone and iPad, internal testers have access to version 1.14.0 build 20006. Public beta enrollment is awaiting Apple approval. [Mobile release checks](MOBILE-1.14.0.md). The separate 1.12.1 App Store submission is set to release automatically upon approval.
 

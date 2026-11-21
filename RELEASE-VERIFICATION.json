@@ -1,15 +1,15 @@
 {
-  "version": "1.14.1",
-  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.1",
+  "version": "1.15.2",
+  "release": "https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.15.2",
   "installer": {
-    "version": "1.14.1",
+    "version": "1.15.2",
     "anonymousPublicDownload": true,
     "files": 2144,
-    "bytes": 94474752,
-    "sha256": "31d19e2e32e184ae2679792fe33107bf711939842ab0a55f9510c1559e216b6a",
-    "appSha256": "930f6c75f2c6a227c2ecc6227bc91faf962461484f137823cb47f3d502fe4667",
+    "bytes": 94479360,
+    "sha256": "faca688323a2fd6915ec029cac021adaf0de7f59a5c8584b0a25f40c8c8a3f2c",
+    "appSha256": "d9ad0df76f4e8281dfa60f0cd93ac8c09c7b334ea9b6371636550501e085501f",
     "ed25519Verified": true,
-    "installerSeconds": 196.6,
+    "installerSeconds": 176.9,
     "emptyCache": true,
     "runtimeArchives": [
       "Electron",
@@ -18,84 +18,212 @@
       "llama.cpp",
       "CUDA"
     ],
-    "utc": "2026-11-21T00:09:07.842757+00:00"
+    "utc": "2026-11-21T02:20:54.439032+00:00"
   },
   "assets": [
-    "NOIRAI-1.14.1-Setup.exe",
-    "NOIRAI-1.14.1-update.json",
-    "SHA256SUMS.txt",
+    "NOIRAI-1.15.2-Setup.exe",
+    "NOIRAI-1.15.2-update.json",
     "Noir-Quick-Start.md",
     "Noir-receiving-desk-pilot.pdf",
-    "Noir-receiving-desk.zip"
+    "Noir-receiving-desk.zip",
+    "SHA256SUMS.txt"
   ],
-  "authenticode": "unsigned",
-  "installerLifecycle": {
-    "low-space": {
-      "filesVerified": 2144,
-      "syntheticDataMarkers": 3,
-      "seconds": 1.89
-    },
-    "interrupted": {
-      "filesVerified": 2144,
-      "syntheticDataMarkers": 3,
-      "seconds": 8.28
-    },
-    "upgrade": {
-      "filesVerified": 2144,
-      "syntheticDataMarkers": 3,
-      "seconds": 33.27
-    },
-    "rollback": {
-      "filesVerified": 2144,
-      "syntheticDataMarkers": 3,
-      "seconds": 2.94
-    }
+  "firstModel": {
+    "id": "huihui-qwen3-4",
+    "name": "Huihui Qwen · 4B",
+    "size": 2497281312,
+    "mode": "cpu",
+    "bytesDuringWorksheet": 2019475,
+    "sha256": "b1324e2f1bd2e0610d591f54f93e38d90b187f69d1f215f4cace349eade678d7",
+    "phase": "ready",
+    "firstReply": "5"
   },
   "hostedWindows": {
-    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44842758445",
-    "status": "completed",
-    "conclusion": "success",
-    "jobs": {
-      "fresh-install (windows-2025)": "success",
-      "fresh-install (windows-2022)": "success"
+    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44857281516",
+    "jobs": [
+      {
+        "os": "fresh-install (windows-2022)",
+        "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44854997624/job/136695006639",
+        "model": {
+          "id": "smollm2-17",
+          "name": "SmolLM 2 · 1.7B",
+          "size": 1055609536,
+          "mode": "cpu",
+          "bytesDuringWorksheet": 14424,
+          "sha256": "decd2598bc2c8ed08c19adc3c8fdd461ee19ed5708679d1c54ef54a5a30d4f33",
+          "phase": "ready",
+          "firstReply": "5"
+        },
+        "checks": [
+          "anonymous public install; 2144 files verified; 5 new runtime archives; no preloaded model or application cache",
+          "Packaged executable opens an empty library and verifies protected commands",
+          "Ctrl+V pastes a real Windows clipboard bitmap into the composer",
+          "Right-click Paste reads a real Windows clipboard bitmap",
+          "Right-click Paste accepts two Windows Explorer file objects",
+          "Ctrl+V accepts two Windows Explorer file objects",
+          "Right-click Paste inserts plain text at the cursor",
+          "A single first-run click downloads the recommended model and opens a local chat while the worksheet remains usable",
+          "Receiving desk records another delivery and recalculates an edited row",
+          "Searchable tool catalog installs, runs and removes an offline Calculator in the public app",
+          "Project file search opens exact numeric and punctuation matches",
+          "Five app choices and an approved live public GitHub read",
+          "Manual command failures stay in the log without offering to resume a chat",
+          "Community uncensored model downloads through the app and answers locally on CPU",
+          "Delete during generation releases the queue for the next prompt",
+          "Packaged protected Node and Python execute synthetic tests",
+          "Real model tool check and review/apply/run/revert work together",
+          "Review finishes real findings and enforces read-only tools",
+          "Review Edits patches only after revision-bound approval",
+          "Agent applies an explicitly permitted edit and finishes",
+          "Agent command waits for approval and executes on the protected copy",
+          "Agent without edit permission leaves the file pending for review",
+          "Support report excludes synthetic chat and project contents",
+          "A second fresh model loads, responds, and switches back",
+          "Completed chat moves into a new project and retains every message",
+          "Chat move and undo preserve identity and reject stale requests",
+          "Optional tools start disabled and cannot inspect an unselected window",
+          "Real MCP discovery, one-time approval and execution work in the public package",
+          "A real local model requests an MCP call and waits for user approval",
+          "Restart restores the selected model and saved conversations",
+          "Restart preserves the organized chat and renamed project"
+        ]
+      },
+      {
+        "os": "fresh-install (windows-2025)",
+        "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44857281516/job/136702330568",
+        "model": {
+          "id": "smollm2-17",
+          "name": "SmolLM 2 · 1.7B",
+          "size": 1055609536,
+          "mode": "cpu",
+          "bytesDuringWorksheet": 14424,
+          "sha256": "decd2598bc2c8ed08c19adc3c8fdd461ee19ed5708679d1c54ef54a5a30d4f33",
+          "phase": "ready",
+          "firstReply": "5"
+        },
+        "checks": [
+          "anonymous public install; 2144 files verified; 5 new runtime archives; no preloaded model or application cache",
+          "Packaged executable opens an empty library and verifies protected commands",
+          "Ctrl+V pastes a real Windows clipboard bitmap into the composer",
+          "Right-click Paste reads a real Windows clipboard bitmap",
+          "Right-click Paste accepts two Windows Explorer file objects",
+          "Ctrl+V accepts two Windows Explorer file objects",
+          "Right-click Paste inserts plain text at the cursor",
+          "A single first-run click downloads the recommended model and opens a local chat while the worksheet remains usable",
+          "Receiving desk records another delivery and recalculates an edited row",
+          "Searchable tool catalog installs, runs and removes an offline Calculator in the public app",
+          "Project file search opens exact numeric and punctuation matches",
+          "Five app choices and an approved live public GitHub read",
+          "Manual command failures stay in the log without offering to resume a chat",
+          "Community uncensored model downloads through the app and answers locally on CPU",
+          "Delete during generation releases the queue for the next prompt",
+          "Packaged protected Node and Python execute synthetic tests",
+          "Real model tool check and review/apply/run/revert work together",
+          "Review finishes real findings and enforces read-only tools",
+          "Review Edits patches only after revision-bound approval",
+          "Agent applies an explicitly permitted edit and finishes",
+          "Agent command waits for approval and executes on the protected copy",
+          "Agent without edit permission leaves the file pending for review",
+          "Support report excludes synthetic chat and project contents",
+          "A second fresh model loads, responds, and switches back",
+          "Completed chat moves into a new project and retains every message",
+          "Chat move and undo preserve identity and reject stale requests",
+          "Optional tools start disabled and cannot inspect an unselected window",
+          "Real MCP discovery, one-time approval and execution work in the public package",
+          "A real local model requests an MCP call and waits for user approval",
+          "Image runtime and starter model download into an empty image library",
+          "Fresh public image setup produces a real decoded PNG on CPU",
+          "Restart restores the selected model and saved conversations",
+          "Restart preserves the organized chat and renamed project",
+          "Restart preserves the generated image and clears computer access"
+        ]
+      }
+    ],
+    "attempts": [
+      {
+        "os": "fresh-install (windows-2022)",
+        "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44854997624/job/136695006639",
+        "conclusion": "success"
+      },
+      {
+        "os": "fresh-install (windows-2025)",
+        "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44854997624/job/136695006839",
+        "conclusion": "failure"
+      },
+      {
+        "os": "fresh-install (windows-2025)",
+        "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44857281516/job/136702330568",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "namedPlugin": {
+    "checkedAt": "2026-11-21T02:19:11.766304+00:00",
+    "beforeVersion": "1.15.1",
+    "afterVersion": "1.15.2",
+    "before": {
+      "steps": [
+        "list",
+        "search",
+        "list",
+        "finish"
+      ],
+      "approvalRequests": 0,
+      "toolResults": [],
+      "reply": "The connected Synthetic calculator plugin was queried but no tools were found. Unable to add 19 and 23 using the plugin."
+    },
+    "after": {
+      "steps": [
+        "plugin",
+        "plugin",
+        "finish"
+      ],
+      "approvalRequests": 1,
+      "toolResults": [
+        "42"
+      ],
+      "reply": "The Synthetic calculator plugin added 19 and 23, resulting in 42."
+    },
+    "repeatChecks": {
+      "sampleCount": 9,
+      "minSecondsToApproval": 6.03,
+      "maxSecondsToApproval": 6.72
     }
   },
-  "projectInspector": [
-    "Empty workspace hides unavailable actions, keyboard tabs work, project created through Files",
-    "Created nested file, edited with Monaco, saved, searched content and toggled attachment",
-    "Changes history opened the actual applied edit and diff",
-    "Created and corrected a durable project note and saved the project summary",
-    "Tasks queued a planner from the UI, retained its project and recorded cancellation",
-    "Reopened the application and independently verified file bytes, memory, project configuration and task history"
-  ],
-  "previousReleaseEvidence": "qualification/verification-1.14.0.json",
-  "regression": {
-    "windows": 263,
-    "suites": 16,
+  "updateLifecycle": {
+    "version": "1.15.2",
+    "previous": "1.14.1",
+    "source": "Packaged Windows installer transaction methods",
+    "checkedAt": "2026-11-21T02:22:14.693489+00:00",
+    "checks": {
+      "low-space": {
+        "filesVerified": 2144,
+        "syntheticDataMarkers": 3,
+        "seconds": 1.77
+      },
+      "interrupted": {
+        "filesVerified": 2144,
+        "syntheticDataMarkers": 3,
+        "seconds": 7.66
+      },
+      "upgrade": {
+        "filesVerified": 2144,
+        "syntheticDataMarkers": 3,
+        "seconds": 32.62
+      },
+      "rollback": {
+        "filesVerified": 2144,
+        "syntheticDataMarkers": 3,
+        "seconds": 2.92
+      }
+    }
+  },
+  "regressions": {
+    "groups": 16,
+    "tests": 275,
+    "pass": 275,
+    "fail": 0,
     "skipped": 0
   },
-  "pairedWindowsFinal": true,
-  "liveProject": {
-    "model": "Qwen 27B (Huihui, local)",
-    "testsPassed": 4,
-    "independentProtectedTestsPassed": true,
-    "projectReopened": true,
-    "confirmedNavigationAndRecovery": {
-      "textSelectionClearedBeforeBothCaptures": true,
-      "manualFailExcludedFromConversationStatus": true,
-      "activeChatNavigationEntries": 1
-    }
-  },
-  "hostedWindowsOriginal": {
-    "run": {
-      "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44841467585",
-      "status": "completed",
-      "conclusion": "failure",
-      "jobs": {
-        "fresh-install (windows-2022)": "failure",
-        "fresh-install (windows-2025)": "failure"
-      }
-    },
-    "note": "The initial exact-copy assertion expected BLUE to an instruction ending in BLUE. The tiny local model included the adjacent period. The full repeat supplies three delimited targets and retains independent exact comparisons. See qualification."
-  }
+  "checkedAt": "2026-11-21T03:03:34.049835+00:00"
 }

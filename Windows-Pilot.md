@@ -6,7 +6,7 @@ Two deliveries arrived against one order. Three blue washers are missing and a b
 
 ## Open the Windows worksheet
 
-1. Install Noir 1.12.2 on Windows x64. Open **NOIRAI** and select **Receiving desk** in the sidebar.
+1. Install the current Windows x64 release and open **NOIRAI**. Select **Try Receiving desk** while your first model downloads, or open **Receiving desk** from the sidebar.
 2. The sample order shows **3 missing, 1 extra**. Select **Add one blue washer**. The count becomes **2 missing, 1 extra**.
 3. Try a shipment of your own. Change the item names or either slip, or choose **Add item**. Select **Copy result** for the item-by-item tally and recount list. Your worksheet stays on this PC when you close it.
 
