@@ -10,6 +10,10 @@ The packaged UI created and edited a nested file, found numeric text in its cont
 
 In the final executable the local 27B model ran the four packing-helper tests and reported what happens at zero carton capacity. Both the generated suite and an independent edge-case suite passed in the protected runner after reopening the project. The new workspace showed the same chat once, with the successful assistant outcome intact after an independently failed manual test.
 
-The installer passed an upgrade from 1.14.0, low-space handling, interrupted update recovery and rollback while preserving synthetic user data. Hosted Windows status is Windows 2022 (running), Windows 2025 (running). [Fresh Windows runs](https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44841467585)
+The installer passed an upgrade from 1.14.0, low-space handling, interrupted update recovery and rollback while preserving synthetic user data. Hosted Windows results are Windows 2025 (in_progress), Windows 2022 (in_progress). [Fresh Windows runs](https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44842758445)
 
 The preceding [1.14.0 project and connected-app tests](QUALIFICATION-1.14.0.md) cover a local 27B model building a packing helper, the review and test of a follow-up change, public GitHub searches, private transport fixtures and alternate reply models. [Current release verification](RELEASE-VERIFICATION.json)
+
+### Exact-copy check
+
+The first hosted run asked the 0.6B model to return the single word BLUE with a period immediately following BLUE in the instruction. It produced `BLUE.`, while the check expected four characters. On the same shipping binary we observed this locally and tested three bracketed targets with explicit instructions to omit punctuation. Three fresh CPU chats returned `BLUE`, `LAMP` and `MINT` exactly. The updated hosted check also records the original response. [Original run](https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44841467585) · [Repeat with three exact targets](https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44842758445)

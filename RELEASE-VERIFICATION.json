@@ -52,11 +52,13 @@
     }
   },
   "hostedWindows": {
-    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44841467585",
-    "jobs": [
-      "Windows 2022 (running)",
-      "Windows 2025 (running)"
-    ]
+    "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44842758445",
+    "status": "in_progress",
+    "conclusion": "",
+    "jobs": {
+      "fresh-install (windows-2025)": "in_progress",
+      "fresh-install (windows-2022)": "in_progress"
+    }
   },
   "projectInspector": [
     "Empty workspace hides unavailable actions, keyboard tabs work, project created through Files",
@@ -83,5 +85,17 @@
       "manualFailExcludedFromConversationStatus": true,
       "activeChatNavigationEntries": 1
     }
+  },
+  "hostedWindowsOriginal": {
+    "run": {
+      "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44841467585",
+      "status": "in_progress",
+      "conclusion": "",
+      "jobs": {
+        "fresh-install (windows-2022)": "failure",
+        "fresh-install (windows-2025)": "in_progress"
+      }
+    },
+    "note": "The initial exact-copy assertion expected BLUE to an instruction ending in BLUE. The tiny local model included the adjacent period. The full repeat supplies three delimited targets and retains independent exact comparisons. See qualification."
   }
 }
