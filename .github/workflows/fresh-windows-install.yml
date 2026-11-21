@@ -10,6 +10,10 @@ on:
         description: Run the native clipboard checks only
         type: boolean
         default: false
+      windows_2025_only:
+        description: Repeat the full qualification only on Windows 2025
+        type: boolean
+        default: false
       sha256:
         description: Reviewed public installer SHA-256
         required: true
@@ -21,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-2022, windows-2025]
+        os: ${{ fromJSON(inputs.windows_2025_only && '["windows-2025"]' || '["windows-2022","windows-2025"]') }}
     runs-on: ${{ matrix.os }}
     timeout-minutes: 65
     steps:

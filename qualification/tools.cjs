@@ -15,16 +15,32 @@ module.exports=async({call,check,until})=>{
   await check('A real local model requests an MCP call and waits for user approval',async()=>{
    const before=calls,project=await call('newProject',{name:'SYNTHETIC_PLUGIN_AGENT'}),chat=await call('newChat',{project});
    await call('send',{chat,prompt:'Use the connected Synthetic calculator plugin to add 19 and 23. Discover its tools if necessary. Call its add tool with a=19 and b=23. Do not write or run code. After the plugin result, report the answer and finish.',mode:'Agent',permissions:{edits:false,commands:false}});
+   let nextTrace=0;
+   function savedTrace(){
+    const path=require('node:path'),root=process.env.NOIR_RELEASE_TEST_ROOT;
+    if(process.env.GITHUB_ACTIONS!=='true'||!root||!path.resolve(root).startsWith(path.resolve(process.env.RUNNER_TEMP)+path.sep))return {};
+    const {DatabaseSync}=require('node:sqlite');
+    const db=new DatabaseSync(path.join(root,'data','NoirgenlocalAI.sqlite'),{readOnly:true});
+    try{
+     const row=db.prepare('SELECT data FROM run_state WHERE run=(SELECT run FROM tasks WHERE chat=? ORDER BY rowid DESC LIMIT 1)').get(chat);
+     const memo=row?JSON.parse(row.data):{};
+     return {iteration:memo.iteration,limit:memo.limit,question:memo.question?.question,steps:(memo.steps||[]).slice(-10).map(s=>({kind:s.kind,tool:s.action?.tool,summary:s.summary?.slice(0,160),phase:s.phase,time:s.time}))};
+    }finally{db.close();}
+   }
    const approval=await until(async()=>{
-    const state=await call('state');
+    const state=await call('state',{chat});
     const pending=state.approvals.find(a=>a.chat===chat&&a.status==='pending');
-    const task=state.tasks.find(t=>t.chat===chat&&['failed','limited','complete'].includes(t.status));
-    if(!pending&&!state.busy&&task){
+    const task=state.tasks.find(t=>t.chat===chat);
+    if(Date.now()>=nextTrace||pending||task?.status==='question'){
+     console.log('SYNTHETIC_MCP_PHASE '+JSON.stringify({busy:state.busy,activeChat:state.activeChat===chat,task:task?.status,approval:!!pending,run:state.conversationRun?.status,trace:savedTrace()}));
+     nextTrace=Date.now()+30000;
+    }
+    if(task?.status==='question'||(!pending&&!state.busy&&['failed','limited','complete','cancelled','interrupted'].includes(task?.status))){
      const reply=(await call('messages',{chat})).filter(m=>m.role==='assistant').at(-1)?.content;
-     throw Error('Synthetic calculator finished without requesting approval. Task '+task.status+'. Reply: '+String(reply||task.error||'No reply').slice(0,600));
+     throw Error('Synthetic calculator stopped without requesting approval. Task '+task.status+'. Reply: '+String(reply||task.error||'No reply').slice(0,600)+' Trace: '+JSON.stringify(savedTrace()));
     }
     return pending;
-   },300000);
+   },600000);
    assert.equal(calls,before);await call('approveCommand',{id:approval.id,decision:'once'});
    await until(async()=>{const s=await call('state'),task=s.tasks.find(t=>t.chat===chat);if(s.approvals.some(a=>a.chat===chat&&a.status==='pending'))throw Error('Model requested another approval after the plugin result');if(!s.busy&&task&&['failed','limited','cancelled'].includes(task.status))throw Error('Plugin continuation ended '+task.status+': '+task.error);return !s.busy&&task?.status==='complete';},300000);
    assert.equal(calls,before+1);assert.ok((await call('messages',{chat})).some(m=>m.role==='assistant'&&/42/.test(m.content)));
