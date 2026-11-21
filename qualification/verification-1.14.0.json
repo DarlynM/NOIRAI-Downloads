@@ -58,10 +58,11 @@
   },
   "hostedWindows": {
     "url": "https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44840139387",
-    "jobs": [
-      "Windows 2022 (running)",
-      "Windows 2025 (running)"
-    ]
+    "jobs": {
+      "fresh-install (windows-2022)": "failure",
+      "fresh-install (windows-2025)": "failure"
+    },
+    "conclusion": "failure"
   },
   "publicGitHub": {
     "actualProvider": true,

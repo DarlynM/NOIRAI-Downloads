@@ -12,9 +12,11 @@ An anonymous download of the official installer verified all 2,144 installed fil
 | Project from an empty folder | A local Huihui Qwen 27B model built a Node program, wrote tests and ran them after approval. A separate acceptance test exposed an edge case. Review Edits proposed changes to both files and kept them untouched until applied. The shipping build reopened the same project, notes, chats and tasks and passed both suites. |
 | Project panel | The UI created and edited a nested file, found a literal numeric match, opened its diff, edited a memory and queued/cancelled a planning task. The saved file, note, summary and task survived restart. |
 | Small CPU model | Qwen 0.6B answered arithmetic, exact-word, geography and tool-description prompts in a fresh install profile. An explicit arithmetic answer-only request returned a bare 5. |
-| Hosted Windows | Windows 2022 (running), Windows 2025 (running) |
+| Hosted Windows | Windows 2022 (failure), Windows 2025 (failure) |
 | Windows regression | 261 checks across 16 groups, zero skips. Includes scoped credentials, revoked authorization, backup/restore, approved local tools, cloud history and native computer assistance. |
 | Installer recovery | Tested upgrade from 1.13.0, low disk space, interruption and rollback with synthetic user data. |
 | Phone pairing | Final Windows code exchanged files and updates through the encrypted production relay with current and older software phone peers. Physical iPhone connection timing requires device measurements. |
+
+Both hosted CPU models returned the expected numeric 5. With the prompt “Return the single word BLUE.” the 0.6B model wrote `BLUE.`. The added four-character-only check expected `BLUE` and failed on both machines. The remaining steps in that run did not execute.
 
 [Hosted Windows checks](https://github.com/DarlynM/NOIRAI-Downloads/actions/runs/44840139387) · [Installer, checksum and update receipt](https://github.com/DarlynM/NOIRAI-Downloads/releases/tag/v1.14.0) · [Machine-readable results](RELEASE-VERIFICATION.json)
